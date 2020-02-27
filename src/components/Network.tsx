@@ -10,13 +10,15 @@ class Network extends Component<INetworkProps, any> {
     return (
       <div className="network-container">
         <img src={this.props.info.logo} className="network-logo" alt="logo" />
-        <a
-          rel="noopener noreferrer"
-          href={this.props.info.link}
-          target="_blank"
-        >
-          {this.props.info.title}
-        </a>
+        <div className="network-link-container">
+          <a
+            rel="noopener noreferrer"
+            href={this.props.info.link}
+            target="_blank"
+          >
+            {this.props.info.title}
+          </a>
+        </div>
       </div>
     );
   }

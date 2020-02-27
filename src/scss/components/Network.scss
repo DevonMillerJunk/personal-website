@@ -1,0 +1,18 @@
+.network-container {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  img {
+    width: 150px;
+    height: auto;
+  }
+  .network-link-container {
+    a {
+      vertical-align: middle;
+      height: max-content;
+    }
+  }
+}
