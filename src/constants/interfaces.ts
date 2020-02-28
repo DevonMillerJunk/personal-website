@@ -4,8 +4,20 @@ export interface IMedia {
   logo: any;
 }
 
-export interface IContactInfo {
+export interface IContactState {
   mediaInfo: IMedia[];
+  title: string;
+  info: string;
+}
+
+export interface IInterest {
+  title: string;
+  info: string;
+  image: any;
+}
+
+export interface IInterestState {
+  interestInfo: IInterest[];
   title: string;
   info: string;
 }

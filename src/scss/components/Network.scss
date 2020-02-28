@@ -1,12 +1,16 @@
 .network-container {
-  margin: 0px;
-  padding: 0px;
+  margin: $spacing-sm;
+  padding: $spacing-sm;
+  border-radius: $spacing-md;
+  border-style: solid;
+  border-width: thick;
+
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   img {
-    width: 150px;
+    width: 100px;
     height: auto;
   }
   .network-link-container {

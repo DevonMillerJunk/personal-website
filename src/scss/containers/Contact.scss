@@ -6,8 +6,16 @@
   justify-content: flex-start;
   align-items: center;
 
-  container-title {
+  .container-title {
     margin: 0px;
     padding: 0px;
   }
+}
+
+.contact-media-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }

@@ -1,13 +1,8 @@
 import React, { Component } from "react";
-import { IMedia } from "../constants/interfaces";
+import { IMedia, IContactState } from "../constants/interfaces";
 import { contactInfo } from "../constants/constants";
 import Network from "../components/Network";
 
-interface IContactState {
-  title: string;
-  info: string;
-  mediaInfo: IMedia[];
-}
 class Contact extends Component<any, IContactState> {
   constructor(props: any) {
     super(props);
