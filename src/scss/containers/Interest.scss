@@ -1,0 +1,41 @@
+.interest-container {
+  margin: auto;
+}
+
+.interest-info-container {
+  p {
+    text-align: center;
+  }
+  div {
+    width: $carousel-size;
+    height: $carousel-size;
+  }
+}
+
+.interest-slide-container {
+  height: max-content;
+  width: max-content;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .interest-text-container {
+    height: fit-content;
+    width: auto;
+  }
+
+  .interest-image-container {
+    height: fit-content;
+    width: auto;
+    img {
+      max-width: auto;
+      max-height: 100%;
+    }
+  }
+}
+
+.carousel-indicators li {
+  visibility: hidden;
+}

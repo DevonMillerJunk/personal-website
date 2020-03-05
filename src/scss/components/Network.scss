@@ -1,9 +1,10 @@
 .network-container {
-  margin: $spacing-sm;
+  margin: auto;
   padding: $spacing-sm;
   border-radius: $spacing-md;
   border-style: solid;
   border-width: thick;
+  border-color: $border-colour;
 
   display: flex;
   flex-direction: row;

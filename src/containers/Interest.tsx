@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { RouteComponentProps } from "react-router";
+// import { RouteComponentProps } from "react-router";
 import { IInterest, IInterestState } from "../constants/interfaces";
 import { interestInfo } from "../constants/constants";
 import { Carousel } from "react-bootstrap";
@@ -20,7 +20,12 @@ class Interest extends Component<any, IInterestState & IInterestCarouselState> {
         <div className="title container-title">{this.state.title}</div>
         <div className="interest-info-container">
           <p>{this.state.info}</p>
-          <Carousel activeIndex={this.state.index} onSelect={this.handleSelect}>
+          <Carousel
+            activeIndex={this.state.index}
+            onSelect={this.handleSelect}
+            pauseOnHover={true}
+            interval={null}
+          >
             {this.state.interestInfo.map(this.renderItem)}
           </Carousel>
         </div>
@@ -31,11 +36,19 @@ class Interest extends Component<any, IInterestState & IInterestCarouselState> {
   public renderItem = (interest: IInterest) => {
     return (
       <Carousel.Item>
-        <img className="d-block w-100" src={interest.image} alt="First slide" />
-        <Carousel.Caption>
-          <h3>{interest.title}</h3>
-          <p>{interest.info}</p>
-        </Carousel.Caption>
+        <div className="interest-slide-container">
+          <div className="interest-image-container">
+            <img
+              className="d-block w-100"
+              src={interest.image}
+              alt="First slide"
+            />
+          </div>
+          <div className="interest-text-container">
+            <h3>{interest.title}</h3>
+            <p>{interest.info}</p>
+          </div>
+        </div>
       </Carousel.Item>
     );
   };

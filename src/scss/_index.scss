@@ -10,6 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $background-colour;
 }
 
 code {
@@ -20,10 +21,13 @@ code {
 .title {
   text-align: center;
   text-decoration: underline;
+  font-size: $font-size-lg;
+  color: $title-colour;
 }
 
 p {
   text-align: justify;
   text-decoration: none;
   line-height: 1;
+  color: $text-colour;
 }

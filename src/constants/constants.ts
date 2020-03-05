@@ -27,7 +27,7 @@ export const contactInfo: IContactState = {
     },
     {
       title: "Email",
-      link: `devonmillerjunk@gmail.com`,
+      link: `mailto:devonmillerjunk@gmail.com`,
       logo: email
     }
   ],
