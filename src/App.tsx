@@ -9,7 +9,7 @@ import Interest from "./containers/Interest";
 function App() {
   return (
     <div className="App">
-      <Container className="app-container">
+      <Container fluid className="app-container">
         {/* <Row>
           <Profile />
         </Row> */}
