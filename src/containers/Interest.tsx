@@ -20,12 +20,7 @@ class Interest extends Component<any, IInterestState & IInterestCarouselState> {
         <div className="title container-title">{this.state.title}</div>
         <div className="interest-info-container">
           <p>{this.state.info}</p>
-          <Carousel
-            activeIndex={this.state.index}
-            onSelect={this.handleSelect}
-            pauseOnHover={true}
-            interval={5000}
-          >
+          <Carousel pauseOnHover={true} interval={null} indicators={true}>
             {this.state.interestInfo.map(this.renderItem)}
           </Carousel>
         </div>
@@ -44,11 +39,11 @@ class Interest extends Component<any, IInterestState & IInterestCarouselState> {
               alt="First slide"
             />
           </div>
+          <div className="interest-description-container">
+            <h3>{interest.title}</h3>
+            <p>{interest.info}</p>
+          </div>
         </div>
-        <Carousel.Caption>
-          <h3>{interest.title}</h3>
-          <p>{interest.info}</p>
-        </Carousel.Caption>
       </Carousel.Item>
     );
   };

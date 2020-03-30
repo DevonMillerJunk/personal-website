@@ -48,7 +48,7 @@ p {
 }
 
 .app-container {
-  background-color: #4863a0;
+  background-color: $background-colour;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
