@@ -3,16 +3,16 @@ import Contact from "./containers/Contact";
 import { Row, Container } from "react-bootstrap";
 // import Experience from "./containers/Experience";
 import Interest from "./containers/Interest";
-// import Profile from "./containers/Profile";
+import Profile from "./containers/Profile";
 // import Project from "./containers/Project";
 
 function App() {
   return (
     <div className="App">
       <Container fluid className="app-container">
-        {/* <Row>
+        <Row>
           <Profile />
-        </Row> */}
+        </Row>
         {/* <Row>
           <Experience />
         </Row> */}

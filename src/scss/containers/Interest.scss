@@ -25,23 +25,32 @@
   .interest-description-container {
     height: fit-content;
     width: $carousel-size;
+
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     h3 {
       width: 400px;
-      justify-content: center;
+      text-align: center;
     }
 
     p {
       width: 400px;
-      justify-content: center;
+      text-align: center;
     }
   }
 
   .interest-image-container {
     height: $carousel-image-width;
     width: $carousel-size;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
     img {
       max-height: 100%;
       width: auto;

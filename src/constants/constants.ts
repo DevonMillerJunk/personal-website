@@ -10,7 +10,7 @@ import devonMillerJunk from "../assets/DevonMillerJunk.jpg";
 import doorr from "../assets/doorr.png";
 import lcbonext from "../assets/lcbonext.webp";
 
-import { IContactState, IInterestState } from "./interfaces";
+import { IContactState, IInterestState, IProfileState } from "./interfaces";
 
 export const contactInfo: IContactState = {
   mediaInfo: [
@@ -71,8 +71,8 @@ export const interestInfo: IInterestState = {
   ]
 };
 
-export const profileInfo = {
-  backgroundImage: devonMillerJunk,
+export const profileInfo: IProfileState = {
+  background: devonMillerJunk,
   title: "Hi, I'm Devon",
   info: `I’m a Computer Engineering student and swimmer at the University of Waterloo.
   From a young age I have enjoyed challenging myself solving new problems. While living in Puerto Rico, I was the activities director in my school’s Society of Hispanic Professional Engineers Jr. chapter and competed in island wide math competitions to join the Puerto Rican Junior Olympic Math team.
