@@ -25,5 +25,6 @@ export interface IInterestState {
 export interface IProfileState {
   background: any;
   title: string;
+  subtitle: string;
   info: string;
 }

@@ -1,30 +1,46 @@
 .profile-container {
-    margin: auto;
-    padding: 0px;
-    
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: $profile-bar-height;
+  background-color: $profile-background-colour;
+
+  .profile-image-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    display: block;
+    height: $profile-bar-height;
+    width: $profile-bar-height;
+
     .profile-background-image {
-        width: 100%;
-        height: 900px;
-        object-fit: cover;
-        overflow: hidden;
-        right: 0;
-        margin-top: auto;
-        margin-bottom: auto;
+      -webkit-clip-path: $slanted-frame-polygon;
+      clip-path: $slanted-frame-polygon;
 
-        z-index: -10;
+      height: 100%;
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .profile-text-container {
+    margin-left: 100px;
+    margin-right: $profile-bar-height + 100px;
+    padding: 0;
+    height: 100%;
+    display: block;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    .profile-title {
     }
 
-    .profile-text-container {
-        right: 0;
-        top: 0;
-        bottom: 0;
-        
-        .profile-title {
-
-        }
-    
-        .profile-info {
-    
-        }
+    .profile-info {
     }
+  }
 }

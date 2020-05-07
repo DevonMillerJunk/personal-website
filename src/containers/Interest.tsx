@@ -17,10 +17,10 @@ class Interest extends Component<any, IInterestState & IInterestCarouselState> {
   public render() {
     return (
       <div className="interest-container">
-        <div className="title container-title">{this.state.title}</div>
+        <h1 className="title container-title">{this.state.title}</h1>
         <div className="interest-info-container">
           <p>{this.state.info}</p>
-          <Carousel pauseOnHover={true} interval={null} indicators={true}>
+          <Carousel pauseOnHover={true} interval={3000} indicators={true}>
             {this.state.interestInfo.map(this.renderItem)}
           </Carousel>
         </div>
@@ -50,7 +50,7 @@ class Interest extends Component<any, IInterestState & IInterestCarouselState> {
 
   private handleSelect = (selectedIndex: number, e: any) => {
     this.setState({
-      index: selectedIndex
+      index: selectedIndex,
     });
   };
 }

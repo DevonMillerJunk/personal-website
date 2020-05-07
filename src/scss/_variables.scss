@@ -5,6 +5,9 @@ $spacing-md: 16px;
 $spacing-sm: 8px;
 $spacing-tiny: 4px;
 
+//Specific Spacing
+$profile-bar-height: 260px;
+
 //Set Sizes
 $carousel-size: 600px;
 $carousel-image-width: 500px;
@@ -29,3 +32,7 @@ $title-colour: black;
 $text-colour: black;
 $background-colour: #4863a0;
 $border-colour: black;
+$profile-background-colour: green;
+
+//Misc
+$slanted-frame-polygon: polygon(0 0, 100% 0, 100% 100%, 30% 100%);

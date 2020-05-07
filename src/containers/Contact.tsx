@@ -12,7 +12,7 @@ class Contact extends Component<any, IContactState> {
   public render() {
     return (
       <div className="contact-container">
-        <div className="title container-title">{this.state.title}</div>
+        <h1 className="title container-title">{this.state.title}</h1>
         <div className="contact-info-container">
           <p>{this.state.info}</p>
           <div className="contact-media-container">

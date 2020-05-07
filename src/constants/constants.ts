@@ -17,27 +17,27 @@ export const contactInfo: IContactState = {
     {
       title: "LinkedIn",
       link: `https://www.linkedin.com/in/DevonMillerJunk/`,
-      logo: linkedin
+      logo: linkedin,
     },
     {
       title: "GitHub",
       link: `https://github.com/DevonMillerJunk`,
-      logo: github
+      logo: github,
     },
     {
       title: "Facebook",
       link: `https://www.facebook.com/devon.millerjunk`,
-      logo: facebook
+      logo: facebook,
     },
     {
       title: "Email",
       link: `mailto:devonmillerjunk@gmail.com`,
-      logo: email
-    }
+      logo: email,
+    },
   ],
   title: "Let's Talk",
   info:
-    "Let's connect! I prefer email and LinkedIn messages, but can reach me in any other way you'd like!"
+    "Let's connect! I prefer email and LinkedIn messages, but can reach me in any other way you'd like!",
 };
 
 export const interestInfo: IInterestState = {
@@ -48,36 +48,37 @@ export const interestInfo: IInterestState = {
       title: "Competitive Swimming",
       info:
         "I'm on the Waterloo Varsity Swim Team and have been swimming competitively for over 7 years in both Puerto Rico and Canada! I swim breastroke and freestyle",
-      image: swimming
+      image: swimming,
     },
     {
       title: "Hiking and Camping",
       info:
         "I love hiking, camping, and exploring the outdoors! I've always wanted to go portaging or on a several-day hike!",
-      image: outdoors
+      image: outdoors,
     },
     {
       title: "Board Games",
       info:
         "I love playing cool board games. My Dad and I designed and created the pieces for this board game, Tak.",
-      image: tak
+      image: tak,
     },
     {
       title: "3D Printing and Rapid Prototyping",
       info:
         "I enjoy creating cool designs in AutoCAD and turning my designs into reality. I've been doing this through 3D printing and laser cutting lately, but I love creating in any way!",
-      image: dicetower
-    }
-  ]
+      image: dicetower,
+    },
+  ],
 };
 
 export const profileInfo: IProfileState = {
   background: devonMillerJunk,
-  title: "Hi, I'm Devon",
+  title: "Devon Miller-Junk",
+  subtitle: "Competitive Swimmer and Studying Computer Engineering",
   info: `I’m a Computer Engineering student and swimmer at the University of Waterloo.
   From a young age I have enjoyed challenging myself solving new problems. While living in Puerto Rico, I was the activities director in my school’s Society of Hispanic Professional Engineers Jr. chapter and competed in island wide math competitions to join the Puerto Rican Junior Olympic Math team.
   Since moving to Canada, I have designed and created several programming projects, including a Raspberry Pi hardware debugger, Nowhere to Go board game, and a pool temperature monitor.
-  I'm recently worked a lot with Web Development as a Full-Stack Developer`
+  I'm recently worked a lot with Web Development as a Full-Stack Developer`,
 };
 
 export const experienceInfo = {
@@ -88,16 +89,16 @@ export const experienceInfo = {
       position: "Full-Stack Developer",
       dateRange: "Jan-April 2020",
       logo: lcbonext,
-      website: `https://www.lcbonext.com/`
+      website: `https://www.lcbonext.com/`,
     },
     {
       title: "Doorr",
       position: "Software Engineer",
       dateRange: "May-December 2019",
       logo: doorr,
-      website: `https://doorr.com/`
-    }
-  ]
+      website: `https://doorr.com/`,
+    },
+  ],
 };
 
 export const projectInfo = {
@@ -108,7 +109,7 @@ export const projectInfo = {
       title: "Nowhere to Go",
       info: "",
       image: "",
-      technologies: []
-    }
-  ]
+      technologies: [],
+    },
+  ],
 };
