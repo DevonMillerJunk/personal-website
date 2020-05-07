@@ -53,6 +53,15 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+
+  .section-container {
+    margin-top: $spacing-lg;
+    margin-bottom: $spacing-lg;
+    max-height: max-content;
+
+    width: 80%;
+  }
 }
 
 // .row {

@@ -1,6 +1,6 @@
 import React from "react";
 import Contact from "./containers/Contact";
-import { Row, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 // import Experience from "./containers/Experience";
 import Interest from "./containers/Interest";
 import Profile from "./containers/Profile";
@@ -10,21 +10,17 @@ function App() {
   return (
     <div className="App">
       <Container fluid className="app-container">
-        <Row>
+        <div className="section-container">
           <Profile />
-        </Row>
-        {/* <Row>
-          <Experience />
-        </Row> */}
-        {/* <Row>
-          <Project />
-        </Row> */}
-        <Row>
+        </div>
+        {/* <Experience />
+          <Project /> */}
+        <div className="section-container">
           <Interest />
-        </Row>
-        <Row>
+        </div>
+        <div className="section-container">
           <Contact />
-        </Row>
+        </div>
       </Container>
     </div>
   );

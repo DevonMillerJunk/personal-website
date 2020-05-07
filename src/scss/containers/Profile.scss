@@ -2,18 +2,18 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  height: $profile-bar-height;
+  min-height: 200px;
   background-color: $profile-background-colour;
 
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+
   .profile-image-container {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding: 0;
-    display: block;
-    height: $profile-bar-height;
-    width: $profile-bar-height;
+    display: inline-block;
+    height: 100%;
+    width: auto;
 
     .profile-background-image {
       -webkit-clip-path: $slanted-frame-polygon;
@@ -26,11 +26,8 @@
   }
 
   .profile-text-container {
-    margin-left: 100px;
-    margin-right: $profile-bar-height + 100px;
-    padding: 0;
-    height: 100%;
-    display: block;
+    padding-left: 6rem;
+    overflow: hidden;
 
     display: flex;
     flex-direction: column;

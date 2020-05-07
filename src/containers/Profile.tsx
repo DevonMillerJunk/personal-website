@@ -11,10 +11,6 @@ class Profile extends Component<any, IProfileState> {
   public render() {
     return (
       <div className="profile-container">
-        <div className="profile-text-container">
-          <h1 className="profile-title title">{this.state.title}</h1>
-          <p className="profile-info">{this.state.info}</p>
-        </div>
         <div className="profile-image-container">
           <img
             src={this.state.background}
@@ -22,6 +18,11 @@ class Profile extends Component<any, IProfileState> {
             alt="logo"
           />
         </div>
+        <div className="profile-text-container">
+          <h1 className="profile-title title">{this.state.title}</h1>
+          <p className="profile-info">{this.state.info}</p>
+        </div>
+        {/* {this.state.info} */}
       </div>
     );
   }
