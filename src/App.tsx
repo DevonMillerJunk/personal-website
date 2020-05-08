@@ -27,7 +27,6 @@ class App extends Component<any, IInterestCarouselState> {
     return (
       <div className="App">
         <div className="app-container">
-          <div className="section-spacing" />
           <div className="section-container">
             <Profile />
           </div>
@@ -39,7 +38,6 @@ class App extends Component<any, IInterestCarouselState> {
           <div className="section-container">
             <Contact />
           </div>
-          <div className="section-spacing" />
         </div>
         <Carousel
           className="background-image-container"
