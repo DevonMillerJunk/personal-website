@@ -1,19 +1,19 @@
 .profile-container {
   margin: 0;
   padding: 0;
-  width: 100%;
-  min-height: 200px;
+  width: auto;
+  height: $profile-section-height;
   background-color: $profile-background-colour;
 
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 
   .profile-image-container {
-    display: inline-block;
-    height: 100%;
-    width: auto;
+    display: block;
+    height: $profile-section-height;
+    width: $profile-section-height;
 
     .profile-background-image {
       -webkit-clip-path: $slanted-frame-polygon;
@@ -26,13 +26,17 @@
   }
 
   .profile-text-container {
-    padding-left: 6rem;
-    overflow: hidden;
+    padding-left: 6em;
+    overflow: auto;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+
+    max-width: calc(100% - #{$profile-section-height});
+
+    overflow: hidden;
 
     .profile-title {
     }
