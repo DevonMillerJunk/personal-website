@@ -93,4 +93,7 @@ p {
   min-height: 100%;
   min-width: 100%;
   overflow: hidden;
+
+  filter: $blur-effect;
+  -webkit-filter: $blur-effect;
 }
