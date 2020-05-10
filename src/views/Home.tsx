@@ -33,7 +33,7 @@ class Home extends Component<any, IHomeState> {
 
   public render() {
     return (
-      <div className="App">
+      <div className="home-container">
         <div className="app-container">
           <div className="section-container">
             <Profile />

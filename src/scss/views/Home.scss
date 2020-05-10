@@ -1,38 +1,40 @@
-.app-container {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+.home-container {
+  .app-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 
-  .section-container {
-    margin-top: $section-container-vertical-spacing;
-    margin-bottom: $section-container-vertical-spacing;
+    .section-container {
+      margin-top: $section-container-vertical-spacing;
+      margin-bottom: $section-container-vertical-spacing;
 
-    max-width: 80%;
-    min-height: fit-content;
+      max-width: 80%;
+      min-height: fit-content;
+    }
   }
-}
 
-.background-image-container {
-  position: fixed;
-  min-height: 100%;
-  min-width: 100%;
-  z-index: -10;
+  .background-image-container {
+    position: fixed;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -10;
 
-  overflow: hidden;
-}
+    overflow: hidden;
+  }
 
-.app-background-image {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+  .app-background-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 
-  filter: $blur-effect;
-  -webkit-filter: $blur-effect;
+    filter: $blur-effect;
+    -webkit-filter: $blur-effect;
+  }
 }

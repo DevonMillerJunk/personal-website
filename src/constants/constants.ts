@@ -9,6 +9,7 @@ import tak from "../assets/tak.jpg";
 import devonMillerJunk from "../assets/DevonMillerJunk.jpg";
 import doorr from "../assets/doorr.png";
 import lcbonext from "../assets/lcbonext.webp";
+import resume from "../assets/resume.png";
 
 import { IContactState, IInterestState, IProfileState } from "./interfaces";
 
@@ -33,6 +34,11 @@ export const contactInfo: IContactState = {
       title: "Email",
       link: `mailto:devonmillerjunk@gmail.com`,
       logo: email,
+    },
+    {
+      title: "Resume",
+      link: "/resume",
+      logo: resume,
     },
   ],
   title: "Let's Talk",
