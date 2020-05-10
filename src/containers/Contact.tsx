@@ -13,13 +13,11 @@ class Contact extends Component<any, IContactState> {
     return (
       <div className="contact-container">
         <h1 className="title container-title">{this.state.title}</h1>
-        <div className="contact-info-container">
-          <p>{this.state.info}</p>
-          <div className="contact-media-container">
-            {this.state.mediaInfo.map((communication: IMedia) => {
-              return <Network info={communication} />;
-            })}
-          </div>
+        <p>{this.state.info}</p>
+        <div className="contact-media-container">
+          {this.state.mediaInfo.map((communication: IMedia) => {
+            return <Network info={communication} />;
+          })}
         </div>
       </div>
     );
