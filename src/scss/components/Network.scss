@@ -10,14 +10,39 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  img {
-    width: $network-logo-size;
-    height: auto;
-  }
-  .network-link-container {
-    a {
-      vertical-align: middle;
-      height: max-content;
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    img {
+      max-height: 100%;
+      width: auto;
+      object-fit: scale-down;
+      bottom: 0;
     }
+  }
+}
+
+.network-container:not(.network-Email) {
+  padding: $spacing-sm;
+
+  a {
+    height: $network-logo-size;
+    width: $network-logo-size;
+  }
+}
+
+.network-container.network-Email {
+  $email-padding: 0px;
+  padding: $email-padding;
+
+  a {
+    height: calc(
+      #{$network-logo-size} + 2 * (#{$spacing-sm} - #{$email-padding})
+    );
+    width: calc(
+      #{$network-logo-size} + 2 * (#{$spacing-sm} - #{$email-padding})
+    );
   }
 }

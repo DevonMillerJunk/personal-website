@@ -8,7 +8,7 @@ interface INetworkProps {
 class Network extends Component<INetworkProps, any> {
   public render() {
     return (
-      <div className="network-container">
+      <div className={`network-container network-${this.props.info.title}`}>
         <a
           rel="noopener noreferrer"
           href={this.props.info.link}
