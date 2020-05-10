@@ -119,3 +119,5 @@ export const projectInfo = {
     },
   ],
 };
+
+export const resumeId = "1zLIG6ByMmqk_DagaXowzMIjvcyGL8RZy";

@@ -6,6 +6,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import Home from "./views/Home";
+import Resume from "./views/Resume";
 
 class App extends Component<any, any> {
   public render() {
@@ -14,6 +15,7 @@ class App extends Component<any, any> {
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/resume" component={Resume} />
             <Route render={() => <Redirect to="/" />} />
           </Switch>
         </Router>
