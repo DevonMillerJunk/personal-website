@@ -11,13 +11,14 @@
   background-color: $contact-background-colour;
 
   .container-title {
-    margin: 0px;
-    padding: 0px;
+    padding-left: $spacing-xlg;
+    padding-right: $spacing-xlg;
+    width: 100%;
   }
 
   p {
-    margin-left: $spacing-xlg;
-    margin-right: $spacing-xlg;
+    padding-left: $spacing-xlg;
+    padding-right: $spacing-xlg;
   }
 
   .contact-media-container {

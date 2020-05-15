@@ -20,7 +20,7 @@ class Interest extends Component<any, IInterestState & IInterestCarouselState> {
         <h1 className="title container-title">{this.state.title}</h1>
         <div className="interest-info-container">
           <p>{this.state.info}</p>
-          <Carousel pauseOnHover={true} interval={3000} indicators={true}>
+          <Carousel pauseOnHover={true} interval={5000} indicators={true}>
             {this.state.interestInfo.map(this.renderItem)}
           </Carousel>
         </div>
