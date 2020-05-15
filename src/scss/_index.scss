@@ -8,11 +8,13 @@ html {
   height: 100%;
 }
 
+// font-family: "Proxima Nova Soft", -apple-system, BlinkMacSystemFont,
+// "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+// "Droid Sans", "Helvetica Neue", sans-serif;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "canada-type-gibson", "Rubik", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $background-colour;

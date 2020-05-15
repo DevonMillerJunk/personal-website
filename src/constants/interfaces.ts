@@ -2,6 +2,7 @@ export interface IMedia {
   title: string;
   link: string;
   logo: any;
+  color: string;
 }
 
 export interface IContactState {

@@ -7,10 +7,6 @@ import Profile from "../containers/Profile";
 import { Carousel } from "react-bootstrap";
 
 import background from "../assets/background.jpg";
-import background1 from "../assets/background1.jpg";
-import background2 from "../assets/background2.jpg";
-import background3 from "../assets/background3.jpg";
-import background4 from "../assets/background4.jpg";
 
 interface IHomeState {
   backgroundImages: any[];
@@ -21,13 +17,7 @@ class Home extends Component<any, IHomeState> {
     super(props);
 
     this.state = {
-      backgroundImages: [
-        background,
-        background1,
-        background2,
-        background3,
-        background4,
-      ],
+      backgroundImages: [background],
     };
   }
 
