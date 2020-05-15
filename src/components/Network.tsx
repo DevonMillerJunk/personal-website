@@ -8,17 +8,21 @@ interface INetworkProps {
 class Network extends Component<INetworkProps, any> {
   public render() {
     return (
-      <div className={`network-container network-${this.props.info.title}`}>
-        <a
-          rel="noopener noreferrer"
-          href={this.props.info.link}
-          target="_blank"
-        >
+      <div
+        className={`network-button-container network-button-${this.props.info.title}`}
+        onClick={this.buttonHandler}
+      >
+        <div className={`network-container network-${this.props.info.title}`}>
           <img src={this.props.info.logo} className="network-logo" alt="logo" />
-        </a>
+          <div className="network-title">{this.props.info.title}</div>
+        </div>
       </div>
     );
   }
+
+  private buttonHandler = () => {
+    window.open(this.props.info.link, "mywindow");
+  };
 }
 
 export default Network;
