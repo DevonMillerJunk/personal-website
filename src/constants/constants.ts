@@ -19,31 +19,26 @@ export const contactInfo: IContactState = {
       title: "LinkedIn",
       link: `https://www.linkedin.com/in/DevonMillerJunk/`,
       logo: linkedin,
-      color: "#0e76a8",
     },
     {
       title: "GitHub",
       link: `https://github.com/DevonMillerJunk`,
       logo: github,
-      color: "#767676", //"#333" as darker option
     },
     {
       title: "Facebook",
       link: `https://www.facebook.com/devon.millerjunk`,
       logo: facebook,
-      color: "#3b5998",
     },
     {
       title: "Email",
       link: `mailto:devonmillerjunk@gmail.com`,
       logo: email,
-      color: "#004f9f",
     },
     {
       title: "Resume",
       link: "/resume",
       logo: resume,
-      color: "#ff0000",
     },
   ],
   title: "Let's Talk",
