@@ -1,12 +1,10 @@
 .interest-container {
   margin: auto;
-  background-color: $interest-background-colour;
+  background-color: $section-background-colour;
 
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: $spacing-xlg;
+  padding: $spacing-xlg;
 
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .interest-info-container {
@@ -15,12 +13,13 @@
   align-items: center;
 
   p {
-    text-align: center;
-    margin-bottom: $spacing-lg;
+    text-align: left;
+
+    width: 100%;
   }
   div {
     width: $carousel-size;
-    height: $carousel-size;
+    height: calc(#{$carousel-size} + 2 * #{$spacing-tiny});
   }
 }
 
@@ -42,13 +41,18 @@
     justify-content: center;
     align-items: center;
 
+    margin-top: $spacing-md;
+
     h3 {
-      width: 400px;
+      max-width: 100%;
       text-align: center;
+
+      font-size: $font-size-reg;
+      font-weight: bold;
     }
 
     p {
-      width: 400px;
+      max-width: 100%;
       text-align: center;
     }
   }
@@ -66,8 +70,10 @@
       max-height: 100%;
       width: auto;
       object-fit: scale-down;
-      overflow: hidden;
-      bottom: 0;
+      overflow-x: hidden;
+
+      margin-top: auto;
+      margin-bottom: auto;
     }
   }
 }

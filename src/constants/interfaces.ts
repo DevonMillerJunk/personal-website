@@ -1,3 +1,10 @@
+export enum RoutesEnum {
+  HOME = "/",
+  RESUME = "/resume",
+  DOORR = "/doorr",
+  LCBONEXT = "/lcbonext",
+}
+
 export interface IMedia {
   title: string;
   link: string;
@@ -27,4 +34,19 @@ export interface IProfileState {
   title: string;
   subtitle: string;
   info: string;
+}
+
+export interface IJob {
+  title: string;
+  position: string;
+  dateRange: string;
+  logo: any;
+  website: string;
+  link: string;
+  htmlName: string;
+}
+
+export interface IExperienceState {
+  title: string;
+  jobs: IJob[];
 }

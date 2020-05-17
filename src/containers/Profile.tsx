@@ -20,9 +20,9 @@ class Profile extends Component<any, IProfileState> {
         </div>
         <div className="profile-text-container">
           <h1 className="profile-title title">{this.state.title}</h1>
+          <h5 className="profile-subtitle">{this.state.subtitle}</h5>
           <p className="profile-info">{this.state.info}</p>
         </div>
-        {/* {this.state.info} */}
       </div>
     );
   }

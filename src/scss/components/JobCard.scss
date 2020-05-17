@@ -1,0 +1,92 @@
+.job-card-container {
+  position: relative;
+
+  $job-card-image-padding: $spacing-sm;
+
+  width: calc(#{$experience-card-size} + 2 * #{$job-card-image-padding});
+  height: calc(
+    (#{$experience-card-size} + 2 * #{$job-card-image-padding}) * 0.75
+  );
+
+  .job-logo {
+    width: $experience-card-size;
+    height: auto;
+
+    opacity: 1;
+    display: block;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  .job-card-info {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+
+    .job-card-title {
+      max-width: 90%;
+
+      font-size: $font-size-lg;
+      font-weight: bold;
+    }
+
+    .job-card-position {
+      max-width: 90%;
+
+      font-size: $font-size-reg;
+      font-weight: bold;
+    }
+
+    .job-card-range {
+      max-width: 90%;
+
+      font-size: $font-size-sm;
+    }
+  }
+}
+
+.job-card-container:hover .job-logo {
+  opacity: 0.3;
+}
+
+.job-card-container:hover .job-card-info {
+  opacity: 1;
+}
+
+.job-card-doorr {
+  background-color: #041e39;
+
+  .job-card-info {
+    div {
+      color: white;
+    }
+  }
+}
+
+.job-card-lcbo {
+  background-color: #ffffff;
+
+  .job-card-info {
+    div {
+      color: black;
+    }
+  }
+}

@@ -3,7 +3,7 @@
   padding: 0;
   width: auto;
   height: $profile-section-height;
-  background-color: $profile-background-colour;
+  background-color: $section-background-colour;
 
   display: flex;
   flex-direction: row-reverse;
@@ -42,7 +42,22 @@
       width: 100%;
     }
 
+    .profile-subtitle {
+      margin-bottom: $spacing-md;
+      width: 100%;
+
+      text-align: justify;
+      text-decoration: none;
+      color: $text-colour;
+      font-size: $font-size-reg;
+    }
+
     .profile-info {
+      text-align: justify;
+      text-decoration: none;
+      line-height: 1;
+      color: $text-colour;
+      font-size: $font-size-sm;
     }
   }
 }

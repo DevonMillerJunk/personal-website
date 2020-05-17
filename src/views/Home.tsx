@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Contact from "../containers/Contact";
-// import Experience from "../containers/Experience";
+import Experience from "../containers/Experience";
 import Interest from "../containers/Interest";
 import Profile from "../containers/Profile";
 // import Project from "../containers/Project";
@@ -28,8 +28,12 @@ class Home extends Component<any, IHomeState> {
           <div className="section-container">
             <Profile />
           </div>
-          {/* <Experience />
-          <Project /> */}
+          <div className="section-container">
+            <Experience />
+          </div>
+          {/* <div className="section-container">
+            <Project />
+          </div> */}
           <div className="section-container">
             <Interest />
           </div>
