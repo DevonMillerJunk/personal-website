@@ -41,6 +41,8 @@ export interface IJobProject {
   info: string;
   picture: any;
   technologies: string[];
+  htmlName: string;
+  disclaimer?: string;
 }
 
 export interface IJob {

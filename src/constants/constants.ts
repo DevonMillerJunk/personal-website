@@ -16,6 +16,7 @@ import DoorrLogoColour from "../assets/Doorr/doorr-coloured.png";
 import adtal from "../assets/Doorr/adtal.png";
 import filogix from "../assets/Doorr/filogix.png";
 import rotting from "../assets/Doorr/rotting.png";
+import automatedTesting from "../assets/Doorr/automatedTesting.png";
 
 import lcbonext from "../assets/LCBO/lcbonext.webp";
 import coldstream from "../assets/LCBO/coldstream.png";
@@ -124,6 +125,9 @@ export const doorrInfo: IJob = {
         "Designed and implemented serverless administration portal in TypeScript, reducing time spent on client requests and provided statistics and usage rates essential for the business",
       picture: adtal,
       technologies: ["AWS Lambda", "Typescript", "REST API", "Postgres"],
+      htmlName: "adtal",
+      disclaimer:
+        "*All values shown here are false and not based off of any data*",
     },
     {
       title: "Snoopy",
@@ -131,6 +135,7 @@ export const doorrInfo: IJob = {
         "Expanded upon and fixed 3rd party mortgage application submission tool written in TypeScript and Puppeteer essential for the daily use of the platform, decreasing the amount of errors by 60% ",
       picture: filogix,
       technologies: ["AWS Lambda", "Typescript", "SOAP API", "Puppeteer"],
+      htmlName: "snoopy",
     },
     {
       title: "New Features for the Platform",
@@ -138,6 +143,15 @@ export const doorrInfo: IJob = {
         "Maintained excellent communication with frontend team to integrate new personally created backend functions and features for the platform",
       picture: rotting,
       technologies: ["AWS Lambda", "Typescript", "REST API", "Postgres"],
+      htmlName: "new-features",
+    },
+    {
+      title: "Automated Testing",
+      info:
+        "Built out a set of automated tests and tools for the platform to speed up pre-release testing by 60%",
+      picture: automatedTesting,
+      technologies: ["AWS Lambda", "Typescript", "Jest", "Puppeteer"],
+      htmlName: "automated-testing",
     },
   ],
 };
@@ -166,6 +180,7 @@ export const lcboInfo: IJob = {
         "Elasticsearch",
         "Docker",
       ],
+      htmlName: "coldstream",
     },
     {
       title: "Challenge & Refusal",
@@ -181,6 +196,7 @@ export const lcboInfo: IJob = {
         "Auth0",
         "Postgres",
       ],
+      htmlName: "cr",
     },
     {
       title: "Crown",
@@ -196,6 +212,7 @@ export const lcboInfo: IJob = {
         "Elasticsearch",
         "Redis",
       ],
+      htmlName: "crown",
     },
     {
       title: "Mixology",
@@ -203,6 +220,7 @@ export const lcboInfo: IJob = {
         "Updated and improved upon Mixology, a cocktail recommendation app.",
       picture: mixology,
       technologies: ["Typescript", "Express", "React", "SCSS", "HTML5"],
+      htmlName: "mixology",
     },
   ],
 };

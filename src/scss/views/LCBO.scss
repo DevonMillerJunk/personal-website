@@ -1,18 +1,47 @@
 .lcbo-container {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-
   .lcbo-projects-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: flex-start;
-    flex-wrap: wrap;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50% 50%;
 
-    width: 100%;
-    height: 100%;
+    .project-card-coldstream {
+      grid-area: 1 / 1 / 2 / 2;
+      overflow: hidden;
+
+      .job-project-logo {
+        height: auto;
+        width: 100%;
+        max-height: 100vh !important;
+      }
+    }
+
+    .project-card-cr {
+      grid-area: 1 / 2 / 2 / 6;
+      overflow: hidden;
+
+      .job-project-logo {
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    .project-card-crown {
+      grid-area: 2 / 1 / 3 / 3;
+      overflow: hidden;
+
+      .job-project-logo {
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    .project-card-mixology {
+      grid-area: 2 / 3 / 3 / 6;
+      overflow: hidden;
+
+      .job-project-logo {
+        height: 100%;
+        width: auto;
+      }
+    }
   }
 }

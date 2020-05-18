@@ -1,0 +1,13 @@
+.job-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  .job-projects-container {
+    display: grid;
+
+    width: 100%;
+    height: 100%;
+  }
+}

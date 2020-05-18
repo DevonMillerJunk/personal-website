@@ -68,7 +68,7 @@
 }
 
 .job-card-container:hover .job-logo {
-  opacity: 0.3;
+  opacity: $hover-card-opacity;
 }
 
 .job-card-container:hover .job-card-info {
