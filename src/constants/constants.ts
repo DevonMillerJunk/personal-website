@@ -111,6 +111,8 @@ export const profileInfo: IProfileState = {
 
 export const doorrInfo: IJob = {
   title: "Doorr",
+  description:
+    "As a Software Engineer at Doorr, I have had the opportunity to work on a severless Web Application that helped Mortgage Brokers conduct all of their business in a one-stop-shop solution. I worked in a wide variety of different projects, included designing and implementing the backend for the new admin portal, developing a set of automated tests using Jest and Puppeteer, and improving the 3rd party application submission system. It was a great experience that truly changed my perspective on what I'd like to accomplish with my career!",
   position: "Software Engineer",
   dateRange: "May-December 2019",
   logo: doorr,
@@ -124,21 +126,27 @@ export const doorrInfo: IJob = {
       info:
         "Designed and implemented serverless administration portal in TypeScript, reducing time spent on client requests and provided statistics and usage rates essential for the business",
       picture: adtal,
-      technologies: ["AWS Lambda", "Typescript", "REST API", "Postgres"],
+      technologies: [
+        "AWS Lambda",
+        "AWS API Gateway",
+        "Typescript",
+        "REST API",
+        "Postgres",
+      ],
       htmlName: "adtal",
       disclaimer:
-        "*All values shown here are false and not based off of any data*",
+        "*All values shown here are false and not based off of any real data*",
     },
     {
       title: "Snoopy",
       info:
         "Expanded upon and fixed 3rd party mortgage application submission tool written in TypeScript and Puppeteer essential for the daily use of the platform, decreasing the amount of errors by 60% ",
       picture: filogix,
-      technologies: ["AWS Lambda", "Typescript", "SOAP API", "Puppeteer"],
+      technologies: ["AWS Lambda", "Typescript", "Puppeteer"],
       htmlName: "snoopy",
     },
     {
-      title: "New Features for the Platform",
+      title: "Rotting",
       info:
         "Maintained excellent communication with frontend team to integrate new personally created backend functions and features for the platform",
       picture: rotting,
@@ -158,6 +166,8 @@ export const doorrInfo: IJob = {
 
 export const lcboInfo: IJob = {
   title: "LCBO|next",
+  description:
+    "As a Full-Stack Developer at LCBO|next, I worked all over the stack and all across the development cycle on several up-and-coming projects for LCBO. Working in a multidisciplinary team, we pushed Electronic Bin Tags into piloting in Ontario, created a Challenge Reporting application to be sold as a white-labelled SaaS, and updating and improving upon several applications in production & piloting around Ontario. Working at LCBO|next I not only had the opportunity to work on the back-end and front-end of all our applications, but also create and manage the deployment process and architecture.",
   position: "Full-Stack Developer",
   dateRange: "January-April 2020",
   logo: lcbonext,
@@ -171,14 +181,13 @@ export const lcboInfo: IJob = {
         "Created and managed implementation of an API for the piloting of Electronic Bin Tag tags in retail stores",
       picture: coldstream,
       technologies: [
-        "Azure Web Server",
+        "Azure Services",
         "Azure Pipelines",
+        "Docker",
         "Typescript",
-        "REST API",
         "Swagger",
         "Redis",
         "Elasticsearch",
-        "Docker",
       ],
       htmlName: "coldstream",
     },
@@ -188,11 +197,11 @@ export const lcboInfo: IJob = {
         "Programmed a challenge reporting PWA in TS and React configured with role-based access control from Auth0",
       picture: cr,
       technologies: [
+        "Azure Services",
+        "Azure Pipelines",
+        "Docker",
         "Typescript",
-        "Express",
-        "React",
-        "SCSS",
-        "HTML5",
+        "Swagger",
         "Auth0",
         "Postgres",
       ],
@@ -205,7 +214,6 @@ export const lcboInfo: IJob = {
       picture: crown,
       technologies: [
         "Typescript",
-        "Express",
         "React",
         "SCSS",
         "HTML5",
@@ -219,7 +227,7 @@ export const lcboInfo: IJob = {
       info:
         "Updated and improved upon Mixology, a cocktail recommendation app.",
       picture: mixology,
-      technologies: ["Typescript", "Express", "React", "SCSS", "HTML5"],
+      technologies: ["Typescript", "React", "SCSS", "HTML5", "Azure Functions"],
       htmlName: "mixology",
     },
   ],

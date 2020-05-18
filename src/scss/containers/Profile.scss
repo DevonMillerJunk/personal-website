@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   width: auto;
+  min-width: 1000px;
+  max-width: 1500px;
   height: $profile-section-height;
   background-color: $section-background-colour;
 
@@ -38,18 +40,16 @@
     justify-content: space-around;
 
     .profile-title {
-      margin-bottom: $spacing-lg;
       width: 100%;
     }
 
     .profile-subtitle {
-      margin-bottom: $spacing-md;
       width: 100%;
 
       text-align: justify;
       text-decoration: none;
       color: $text-colour;
-      font-size: $font-size-reg;
+      font-size: calc(#{$font-size-sm} + 2px);
     }
 
     .profile-info {

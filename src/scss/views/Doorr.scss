@@ -1,36 +1,45 @@
 .doorr-container {
-  .doorr-projects-container {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+  .doorr-project-title-container {
+    .doorr-projects-container {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;
 
-    .project-card-adtal {
-      grid-area: 1 / 1 / 2 / 2;
-      overflow: hidden;
+      .project-card-adtal {
+        grid-area: 1 / 1 / 2 / 2;
+        overflow: hidden;
 
-      .job-project-logo {
-        height: 100%;
-        width: auto;
+        .job-project-logo {
+          height: 100%;
+          width: auto;
+        }
+      }
+
+      .project-card-snoopy {
+        grid-area: 1 / 2 / 2 / 3;
+        overflow: hidden;
+
+        .job-project-logo {
+          height: 100%;
+          width: auto;
+        }
+      }
+
+      .project-card-new-features {
+        grid-area: 2 / 1 / 3 / 2;
+        overflow: hidden;
+
+        .job-project-logo {
+          height: 100%;
+          width: auto;
+        }
       }
     }
+  }
 
-    .project-card-snoopy {
-      grid-area: 1 / 2 / 2 / 3;
-      overflow: hidden;
-
-      .job-project-logo {
-        height: 100%;
-        width: auto;
-      }
-    }
-
-    .project-card-new-features {
-      grid-area: 2 / 1 / 3 / 2;
-      overflow: hidden;
-
-      .job-project-logo {
-        height: 100%;
-        width: auto;
-      }
+  .doorr-endnote-container {
+    .job-endnote-image-container {
+      margin: $spacing-tiny;
+      height: 100%;
     }
   }
 }

@@ -4,10 +4,57 @@
   width: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-  .job-projects-container {
-    display: grid;
 
+  .job-description-container {
+    padding: $spacing-xlg;
+
+    .job-description-title {
+      font-size: $font-size-lg;
+      font-weight: bold;
+    }
+
+    .job-description {
+      font-size: $font-size-sm-x;
+    }
+  }
+
+  .job-project-title-container {
+    padding: $spacing-xlg;
+
+    .job-projects-title {
+      font-size: $font-size-lg;
+      font-weight: bold;
+    }
+
+    .job-projects-container {
+      display: grid;
+
+      width: 100%;
+      min-height: $experience-projects-height;
+    }
+  }
+
+  .job-endnote-container {
+    padding: $spacing-xlg;
     width: 100%;
-    height: 100%;
+    height: $job-endnote-height;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .job-endnote-text {
+      font-weight: bold;
+      font-size: $font-size-sm-x;
+    }
+
+    .job-endnote-image-container {
+      cursor: pointer;
+
+      .job-endnote-image {
+        height: 100%;
+        width: auto;
+      }
+    }
   }
 }

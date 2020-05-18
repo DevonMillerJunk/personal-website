@@ -6,8 +6,6 @@
   width: 100%;
   height: 100%;
 
-  border-style: solid;
-
   overflow: hidden;
 
   .job-project-logo {
@@ -71,8 +69,29 @@
     .job-project-card-description {
       max-width: 90%;
 
-      font-size: $font-size-reg;
+      font-size: $font-size-sm-x;
       font-weight: bold;
+    }
+
+    .job-project-technologies-container {
+      margin-top: $spacing-sm;
+      max-width: 100%;
+      padding-left: $spacing-tiny;
+      padding-right: $spacing-tiny;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .job-project-technology {
+        margin: 1px;
+        padding: 2px;
+
+        border-style: solid;
+        border-radius: $radius-sm;
+
+        font-weight: bold;
+      }
     }
   }
 }

@@ -47,6 +47,7 @@ export interface IJobProject {
 
 export interface IJob {
   title: string;
+  description: string;
   position: string;
   dateRange: string;
   logo: any;

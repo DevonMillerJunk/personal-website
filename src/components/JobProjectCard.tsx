@@ -22,6 +22,11 @@ class JobProjectCard extends Component<IJobProjectCardProps, any> {
           <div className="job-project-card-description">
             {this.props.info.info}
           </div>
+          <div className="job-project-technologies-container">
+            {this.props.info.technologies.map((technology: string) =>
+              this.renderTechnology(technology)
+            )}
+          </div>
         </div>
       </div>
     );
@@ -36,6 +41,10 @@ class JobProjectCard extends Component<IJobProjectCardProps, any> {
       );
     }
     return null;
+  };
+
+  private renderTechnology = (technology: string) => {
+    return <div className="job-project-technology">{technology}</div>;
   };
 }
 
