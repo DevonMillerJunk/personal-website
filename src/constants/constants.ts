@@ -1,15 +1,27 @@
-import email from "../assets/email.png";
-import facebook from "../assets/facebook.png";
-import github from "../assets/github.png";
-import linkedin from "../assets/linkedin.png";
-import dicetower from "../assets/dicetower.jpg";
-import outdoors from "../assets/outdoors.jpg";
-import swimming from "../assets/swimming.jpg";
-import tak from "../assets/tak.jpg";
+import email from "../assets/Contact/email.png";
+import facebook from "../assets/Contact/facebook.png";
+import github from "../assets/Contact/github.png";
+import linkedin from "../assets/Contact/linkedin.png";
+import resume from "../assets/Contact/resume.png";
+
+import dicetower from "../assets/Interests/dicetower.jpg";
+import outdoors from "../assets/Interests/outdoors.jpg";
+import swimming from "../assets/Interests/swimming.jpg";
+import tak from "../assets/Interests/tak.jpg";
+
 import devonMillerJunk from "../assets/DevonMillerJunk.jpg";
-import doorr from "../assets/doorr.png";
-import lcbonext from "../assets/lcbonext.webp";
-import resume from "../assets/resume.png";
+
+import doorr from "../assets/Doorr/doorr.png";
+import DoorrLogoColour from "../assets/Doorr/doorr-coloured.png";
+import adtal from "../assets/Doorr/adtal.png";
+import filogix from "../assets/Doorr/filogix.png";
+import rotting from "../assets/Doorr/rotting.png";
+
+import lcbonext from "../assets/LCBO/lcbonext.webp";
+import coldstream from "../assets/LCBO/coldstream.png";
+import cr from "../assets/LCBO/cr.png";
+import crown from "../assets/LCBO/crown.webp";
+import mixology from "../assets/LCBO/mixology.png";
 
 import {
   IContactState,
@@ -17,6 +29,7 @@ import {
   IProfileState,
   IExperienceState,
   RoutesEnum,
+  IJob,
 } from "./interfaces";
 
 export const contactInfo: IContactState = {
@@ -95,34 +108,108 @@ export const profileInfo: IProfileState = {
   I'm recently worked a lot with Web Development as a Full-Stack Developer.`,
 };
 
-// `I’m a Computer Engineering student and swimmer at the University of Waterloo.
-//   From a young age I have enjoyed challenging myself solving new problems. While living in Puerto Rico, I was the activities director in my school’s
-//   Society of Hispanic Professional Engineers Jr. chapter and competed in island wide math competitions to join the Puerto Rican Junior Olympic Math team.
-//   Since moving to Canada, I have designed and created several programming projects, including a Raspberry Pi hardware debugger, Nowhere to Go board game, and a pool temperature monitor.
-//   I'm recently worked a lot with Web Development as a Full-Stack Developer.`
+export const doorrInfo: IJob = {
+  title: "Doorr",
+  position: "Software Engineer",
+  dateRange: "May-December 2019",
+  logo: doorr,
+  website: `https://doorr.com/`,
+  link: RoutesEnum.DOORR,
+  htmlName: "doorr",
+  navbarLogo: DoorrLogoColour,
+  projects: [
+    {
+      title: "Admin Portal",
+      info:
+        "Designed and implemented serverless administration portal in TypeScript, reducing time spent on client requests and provided statistics and usage rates essential for the business",
+      picture: adtal,
+      technologies: ["AWS Lambda", "Typescript", "REST API", "Postgres"],
+    },
+    {
+      title: "Snoopy",
+      info:
+        "Expanded upon and fixed 3rd party mortgage application submission tool written in TypeScript and Puppeteer essential for the daily use of the platform, decreasing the amount of errors by 60% ",
+      picture: filogix,
+      technologies: ["AWS Lambda", "Typescript", "SOAP API", "Puppeteer"],
+    },
+    {
+      title: "New Features for the Platform",
+      info:
+        "Maintained excellent communication with frontend team to integrate new personally created backend functions and features for the platform",
+      picture: rotting,
+      technologies: ["AWS Lambda", "Typescript", "REST API", "Postgres"],
+    },
+  ],
+};
+
+export const lcboInfo: IJob = {
+  title: "LCBO|next",
+  position: "Full-Stack Developer",
+  dateRange: "January-April 2020",
+  logo: lcbonext,
+  website: `https://www.lcbonext.com/`,
+  link: RoutesEnum.LCBONEXT,
+  htmlName: "lcbo",
+  projects: [
+    {
+      title: "Coldstream",
+      info:
+        "Created and managed implementation of an API for the piloting of Electronic Bin Tag tags in retail stores",
+      picture: coldstream,
+      technologies: [
+        "Azure Web Server",
+        "Azure Pipelines",
+        "Typescript",
+        "REST API",
+        "Swagger",
+        "Redis",
+        "Elasticsearch",
+        "Docker",
+      ],
+    },
+    {
+      title: "Challenge & Refusal",
+      info:
+        "Programmed a challenge reporting PWA in TS and React configured with role-based access control from Auth0",
+      picture: cr,
+      technologies: [
+        "Typescript",
+        "Express",
+        "React",
+        "SCSS",
+        "HTML5",
+        "Auth0",
+        "Postgres",
+      ],
+    },
+    {
+      title: "Crown",
+      info:
+        "Updated and improved upon Crown, a product discovery app. Reduced the load time of the nearest store by 80%",
+      picture: crown,
+      technologies: [
+        "Typescript",
+        "Express",
+        "React",
+        "SCSS",
+        "HTML5",
+        "Elasticsearch",
+        "Redis",
+      ],
+    },
+    {
+      title: "Mixology",
+      info:
+        "Updated and improved upon Mixology, a cocktail recommendation app.",
+      picture: mixology,
+      technologies: ["Typescript", "Express", "React", "SCSS", "HTML5"],
+    },
+  ],
+};
 
 export const experienceInfo: IExperienceState = {
   title: "My Experience",
-  jobs: [
-    {
-      title: "LCBO|next",
-      position: "Full-Stack Developer",
-      dateRange: "January-April 2020",
-      logo: lcbonext,
-      website: `https://www.lcbonext.com/`,
-      link: RoutesEnum.LCBONEXT,
-      htmlName: "lcbo",
-    },
-    {
-      title: "Doorr",
-      position: "Software Engineer",
-      dateRange: "May-December 2019",
-      logo: doorr,
-      website: `https://doorr.com/`,
-      link: RoutesEnum.DOORR,
-      htmlName: "doorr",
-    },
-  ],
+  jobs: [lcboInfo, doorrInfo],
 };
 
 export const projectInfo = {

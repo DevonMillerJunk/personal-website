@@ -36,6 +36,13 @@ export interface IProfileState {
   info: string;
 }
 
+export interface IJobProject {
+  title: string;
+  info: string;
+  picture: any;
+  technologies: string[];
+}
+
 export interface IJob {
   title: string;
   position: string;
@@ -44,6 +51,8 @@ export interface IJob {
   website: string;
   link: string;
   htmlName: string;
+  navbarLogo?: any;
+  projects: IJobProject[];
 }
 
 export interface IExperienceState {

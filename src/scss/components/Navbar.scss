@@ -30,6 +30,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+
+    cursor: pointer;
+
     .navbar-title-image {
       height: calc(#{$navbar-height} * (0.75));
       width: auto;

@@ -5,6 +5,7 @@ import backarrow from "../assets/backarrow.png";
 
 interface INavbarProps {
   titleImage?: any;
+  link?: any;
 }
 
 interface INavbarState {
@@ -35,9 +36,9 @@ class Navbar extends Component<INavbarProps, INavbarState> {
   }
 
   private renderTitleImage = () => {
-    if (this.props.titleImage) {
+    if (this.props.titleImage && this.props.link) {
       return (
-        <div className="navbar-title-container">
+        <div className="navbar-title-container" onClick={this.buttonHandler}>
           <img
             src={this.props.titleImage}
             className="navbar-title-image"
@@ -53,6 +54,12 @@ class Navbar extends Component<INavbarProps, INavbarState> {
     this.setState({
       goHome: true,
     });
+  };
+
+  private buttonHandler = () => {
+    if (this.props.link) {
+      window.open(this.props.link, "mywindow");
+    }
   };
 }
 

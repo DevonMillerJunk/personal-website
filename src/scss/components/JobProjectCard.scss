@@ -1,15 +1,15 @@
-.job-card-container {
+.job-project-card-container {
   position: relative;
 
   $job-card-image-padding: $spacing-sm;
 
-  width: calc(#{$experience-card-size} + 2 * #{$job-card-image-padding});
-  height: calc(
-    (#{$experience-card-size} + 2 * #{$job-card-image-padding}) * 0.75
-  );
+  width: $experience-project-card-size;
+  height: $experience-project-card-size;
 
-  .job-logo {
-    width: $experience-card-size;
+  overflow: hidden;
+
+  .job-project-logo {
+    width: $experience-project-card-size;
     height: auto;
 
     opacity: 1;
@@ -26,7 +26,7 @@
     transition: all 0.8s;
   }
 
-  .job-card-info {
+  .job-project-card-info {
     transition: 0.5s ease;
     opacity: 0;
     position: absolute;
@@ -45,21 +45,14 @@
 
     transition: all 0.8s;
 
-    .job-card-title {
+    .job-project-card-title {
       max-width: 90%;
 
       font-size: $font-size-lg;
       font-weight: bold;
     }
 
-    .job-card-position {
-      max-width: 90%;
-
-      font-size: $font-size-reg;
-      font-weight: bold;
-    }
-
-    .job-card-range {
+    .job-project-card-description {
       max-width: 90%;
 
       font-size: $font-size-sm;
@@ -67,30 +60,10 @@
   }
 }
 
-.job-card-container:hover .job-logo {
+.job-project-card-container:hover .job-project-logo {
   opacity: 0.3;
 }
 
-.job-card-container:hover .job-card-info {
+.job-project-card-container:hover .job-project-card-info {
   opacity: 1;
-}
-
-.job-card-doorr {
-  background-color: #041e39;
-
-  .job-card-info {
-    div {
-      color: white;
-    }
-  }
-}
-
-.job-card-lcbo {
-  background-color: #ffffff;
-
-  .job-card-info {
-    div {
-      color: black;
-    }
-  }
 }

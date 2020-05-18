@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { resumeId } from "../constants/constants";
-import Navbar from "../components/Navbar";
 
 class Resume extends Component<any, any> {
   public render() {
