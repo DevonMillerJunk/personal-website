@@ -8,6 +8,8 @@
     (#{$experience-card-size} + 2 * #{$job-card-image-padding}) * 0.75
   );
 
+  cursor: pointer;
+
   .job-logo {
     width: $experience-card-size;
     height: auto;
