@@ -4,6 +4,7 @@ import facebook from "../assets/Contact/facebook.png";
 import github from "../assets/Contact/github.png";
 import linkedin from "../assets/Contact/linkedin.png";
 import resume from "../assets/Contact/resume.png";
+import Resume from "../assets/Resume.pdf";
 
 //Interests Pictures
 import dicetower from "../assets/Interests/dicetower.jpg";
@@ -64,7 +65,7 @@ export const contactInfo: IContactState = {
     },
     {
       title: "Resume",
-      link: RoutesEnum.RESUME,
+      link: Resume,
       logo: resume,
     },
   ],

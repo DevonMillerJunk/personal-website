@@ -1,13 +1,12 @@
 export enum RoutesEnum {
   HOME = "/",
-  RESUME = "/resume",
   DOORR = "/doorr",
   LCBONEXT = "/lcbonext",
 }
 
 export interface IMedia {
   title: string;
-  link: string;
+  link: string | any;
   logo: any;
 }
 
