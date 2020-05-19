@@ -70,13 +70,13 @@ export const contactInfo: IContactState = {
   ],
   title: "Let's Connect!",
   info:
-    "Reach out whenever I'm always open to talk and will try to get back to you in under 24 hours. I'm also in a co-op program and am always looking for cool projects to work on with great people!",
+    "Reach out whenever I'm always open to talk. I'm also in a co-op program and am always looking for cool projects to work on with great people!",
 };
 
 //Information for Interests Section
 export const interestInfo: IInterestState = {
   title: "What I Love To Do",
-  info: "A few of the things that make me, well me.",
+  info: "A few of the things that make me, well, me.",
   interestInfo: [
     {
       title: "Competitive Swimming",
@@ -109,14 +109,14 @@ export const profileInfo: IProfileState = {
   background: devonMillerJunk,
   title: "Hi, I'm Devon",
   subtitle:
-    "Computer Engineer, Competitive Swimmer, and looking to make a difference",
+    "Computer Engineer, Competitive Swimmer, and looking to make a difference.",
   info: `I'm a young Engineer just starting my career and ready to make a difference. Lately, I've found the ability to do just that through web development, but I've also been honing my skills in low-level programming and hardware while studying Computer Engineering at the University of Waterloo. I'm always interested in working on cool engineering projects and working with talented people to find innovative solutions to challenging problems.`,
 };
 
 //Information for Doorr Job
 export const doorrInfo: IJob = {
   title: "Doorr",
-  description: `As a Software Engineer at Doorr, I had the opportunity to work on a serverless Web Application that helps Mortgage Brokers conduct all of their business in a one-stop-shop solution. I worked in a wide variety of different projects, filling multiple different shoes, and performing whatever was needed most. It was a great experience that truly changed my perspective on what I'd like to accomplish with my career. Doorr taught me a lot about how to build proper code that is scalable and allows a full team of developers to work together throughout developing and refining a project.`,
+  description: `As a Software Engineer at Doorr, I had the opportunity to work on a serverless Web Application that helps Mortgage Brokers conduct all of their business in a one-stop-shop solution. I worked on several projects, filling multiple different shoes, and performing whatever was needed most. It was a great experience that truly changed my perspective on what I'd like to accomplish with my career. Doorr taught me a lot about how to build proper code that is scalable and allows a full team of developers to work together throughout developing and refining a project.`,
   position: "Software Engineer",
   dateRange: "May-December 2019",
   logo: doorr,
@@ -129,7 +129,7 @@ export const doorrInfo: IJob = {
       title: "Admin Portal",
       info: `Designed and implemented a serverless administration portal to reduce time 
       spent on client requests and provided statistics and usage rates essential for the business. 
-      The portal saved our CEO tons of time and helped provide our customers with a response in less time.`,
+      The portal saved our CEO tons of time and provided customers with a faster response time.`,
       picture: adtal,
       technologies: [
         "AWS Lambda",
@@ -176,7 +176,7 @@ export const doorrInfo: IJob = {
 //Information for LCBO job
 export const lcboInfo: IJob = {
   title: "LCBO|next",
-  description: `As a Full-Stack Developer at LCBO|next, I worked all over the stack and all across the development cycle on several up-and-coming projects. Working in a multidisciplinary team, we pushed Electronic Bin Tags into piloting in Ontario, created a Challenge Reporting application, and updating and improving upon several applications in production & piloting across Ontario. While working at LCBO|next,
+  description: `As a Full-Stack Developer at LCBO|next, I worked all across the stack and all across the development cycle on several up-and-coming projects. Working in a multidisciplinary team, we pushed Electronic Bin Tags into piloting in Ontario, created a Challenge Reporting application, and updated and improved upon several applications in production and piloting across Ontario. While working at LCBO|next,
   I not only had the opportunity to work on the back-end and front-end of all our applications but also create and manage the deployment process and architecture on the Azure cloud. LCBO|next provided me with an amazing opportunity 
   to become familiar with tons of cutting edge technologies under knowledgeable mentors with a group of amazing co-op students.`,
   position: "Full-Stack Developer",

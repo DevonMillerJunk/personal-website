@@ -22,7 +22,7 @@ class LCBO extends Component<any, IJob> {
           <div className="lcbo-description job-description">{`${this.state.description}`}</div>
         </div>
         <div className="lcbo-project-title-container job-project-title-container">
-          <div className="lcbo-project-title job-projects-title">{`The Projects I worked on at ${this.state.title}`}</div>
+          <div className="lcbo-project-title job-projects-title">{`Some of the Projects I Worked On`}</div>
           <div className="lcbo-projects-container job-projects-container">
             {this.state.projects.map((project: IJobProject) => (
               <JobProjectCard info={project} />

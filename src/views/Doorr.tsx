@@ -22,7 +22,7 @@ class Doorr extends Component<any, IJob> {
           <div className="doorr-description job-description">{`${this.state.description}`}</div>
         </div>
         <div className="doorr-project-title-container job-project-title-container">
-          <div className="doorr-project-title job-projects-title">{`The Projects I worked on at ${this.state.title}`}</div>
+          <div className="doorr-project-title job-projects-title">{`Some of the Projects I Worked On`}</div>
           <div className="doorr-projects-container job-projects-container">
             {this.state.projects.map((project: IJobProject) => (
               <JobProjectCard info={project} />
