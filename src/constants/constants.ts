@@ -23,10 +23,10 @@ import rotting from "../assets/Doorr/rotting.png";
 import automatedTesting from "../assets/Doorr/automatedTesting.png";
 
 //LCBO Job Pictures
-import lcbonext from "../assets/LCBO/lcbonext.webp";
+import lcbonext from "../assets/LCBO/lcbonext.png";
 import coldstream from "../assets/LCBO/coldstream.png";
 import cr from "../assets/LCBO/cr.png";
-import crown from "../assets/LCBO/crown.webp";
+import crown from "../assets/LCBO/crown.png";
 import mixology from "../assets/LCBO/mixology.png";
 
 //Necessary Types, Enums, and Interfaces
