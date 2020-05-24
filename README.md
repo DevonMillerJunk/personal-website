@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+
+This project was created by Devon Miller-Junk for the purposes of a personal website. Feel free to fork, clone, and use the code for you own purposes. Almost all of the information displayed on the website can be controlled through the constants and interfaces section, so feel free to modify it for your own personal website.
+
+You can find the current version of the live website [here](http://www.devonmillerjunk.engineer)
 
 ## Available Scripts
 
