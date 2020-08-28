@@ -26,11 +26,10 @@ class JobCard extends Component<IJobCardProps, IJobCardState> {
     return (
       <div
         className={`job-card-container job-card-${this.props.info.htmlName}`}
-        onClick={this.onClick}
       >
         <img src={this.props.info.logo} className="job-logo" alt="logo" />
         <div className="job-card-info">
-          <div className="job-card-title">{this.props.info.title}</div>
+          <div className="job-card-title" onClick={this.onClick}>{this.props.info.title}</div>
           <div className="job-card-position">{this.props.info.position}</div>
           <div className="job-card-date-range">{this.props.info.dateRange}</div>
         </div>

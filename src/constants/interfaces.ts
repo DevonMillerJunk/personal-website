@@ -1,7 +1,7 @@
 export enum RoutesEnum {
   HOME = "/",
   DOORR = "/doorr",
-  LCBONEXT = "/lcbonext",
+  LCBONEXT = "/lcbonext"
 }
 
 export interface IMedia {
@@ -60,4 +60,14 @@ export interface IJob {
 export interface IExperienceState {
   title: string;
   jobs: IJob[];
+}
+
+export interface ITechnology {
+  title: string;
+  logo: any;
+}
+
+export interface ITechnologyState {
+  title: string;
+  technologies: ITechnology[];
 }

@@ -30,6 +30,24 @@ import cr from "../assets/LCBO/cr.png";
 import crown from "../assets/LCBO/crown.png";
 import mixology from "../assets/LCBO/mixology.png";
 
+//Technology Pictures
+import Auth0 from "../assets/Technologies/Auth0.jpg";
+import AWS from "../assets/Technologies/AWS.png";
+import Azure from "../assets/Technologies/Azure.png";
+import CLogo from "../assets/Technologies/C.png";
+import CppLogo from "../assets/Technologies/C++.png";
+import Docker from "../assets/Technologies/Docker.png";
+import Elasticsearch from "../assets/Technologies/Elasticsearch.png";
+import Mongo from "../assets/Technologies/Mongo.png";
+import Node from "../assets/Technologies/Node.png";
+import Postgres from "../assets/Technologies/Postgres.png";
+import Python from "../assets/Technologies/Python.png";
+import React from "../assets/Technologies/React.png";
+import Redis from "../assets/Technologies/Redis.png";
+import Typescript from "../assets/Technologies/Typescript.png";
+import Vue from "../assets/Technologies/Vue.png";
+import Yarn from "../assets/Technologies/Yarn.png";
+
 //Necessary Types, Enums, and Interfaces
 import {
   IContactState,
@@ -38,6 +56,7 @@ import {
   IExperienceState,
   RoutesEnum,
   IJob,
+  ITechnologyState
 } from "./interfaces";
 
 //Information for Contact Me Section
@@ -46,32 +65,32 @@ export const contactInfo: IContactState = {
     {
       title: "LinkedIn",
       link: `https://www.linkedin.com/in/DevonMillerJunk/`,
-      logo: linkedin,
+      logo: linkedin
     },
     {
       title: "GitHub",
       link: `https://github.com/DevonMillerJunk`,
-      logo: github,
+      logo: github
     },
     {
       title: "Facebook",
       link: `https://www.facebook.com/devon.millerjunk`,
-      logo: facebook,
+      logo: facebook
     },
     {
       title: "Email",
       link: `mailto:devonmillerjunk@gmail.com`,
-      logo: email,
+      logo: email
     },
     {
       title: "Resume",
       link: Resume,
-      logo: resume,
-    },
+      logo: resume
+    }
   ],
   title: "Let's Connect!",
   info:
-    "Reach out whenever I'm always open to talk. I'm also in a co-op program and am always looking for cool projects to work on with great people!",
+    "Reach out whenever I'm always open to talk. I'm also in a co-op program and am always looking for cool projects to work on with great people!"
 };
 
 //Information for Interests Section
@@ -82,27 +101,27 @@ export const interestInfo: IInterestState = {
     {
       title: "Competitive Swimming",
       info: `I'm on the Waterloo Varsity Swim Team and have been swimming competitively for over 7 years in both Puerto Rico and Canada. I swim Breastroke and Freestyle, but also enjoy swimming Individual Medley whenever I can. In 2014 I represented Puerto Rico internationally at the ISSF World Cup in Poland.`,
-      image: swimming,
+      image: swimming
     },
     {
       title: "Hiking and Camping",
       info:
         "I love exploring Canada's outdoors and have been doing so my entire life. When I was really little we would go out camping every summer at different provincial parks. I've always wanted to go out portaging (with a group who will take me).",
-      image: outdoors,
+      image: outdoors
     },
     {
       title: "Board Games",
       info:
         "I've been playing board games, especially strategy games, for a long time. My favorite game is Tak (in the picture above), which my Dad and I made out of wood and stones. A few of the games I find myself going back to are Quoridor, Nowhere to Go, Exploding Kittens, Settlers of Catan, and Khet.",
-      image: tak,
+      image: tak
     },
     {
       title: "3D Printing and Rapid Prototyping",
       info:
         "I enjoy creating cool designs in AutoCAD and turning my designs into reality. I took an AutoCAD course in Inventor and have been using it ever since to create cool designs for different purposes. Lately, I've been using 3D printers a lot, but I love creating my designs in many different ways!",
-      image: dicetower,
-    },
-  ],
+      image: dicetower
+    }
+  ]
 };
 
 //Information for Profile Section
@@ -111,7 +130,7 @@ export const profileInfo: IProfileState = {
   title: "Hi, I'm Devon",
   subtitle:
     "Computer Engineer, Competitive Swimmer, and looking to make a difference.",
-  info: `I'm a young Engineer just starting my career and ready to make a difference. Lately, I've found the ability to do just that through web development, but I've also been honing my skills in low-level programming and hardware while studying Computer Engineering at the University of Waterloo. I'm always interested in working on cool engineering projects and working with talented people to find innovative solutions to challenging problems.`,
+  info: `I'm a young Engineer just starting my career and ready to make a difference. Lately, I've found the ability to do just that through web development, but I've also been honing my skills in low-level programming and hardware while studying Computer Engineering at the University of Waterloo. I'm always interested in working on cool engineering projects and working with talented people to find innovative solutions to challenging problems.`
 };
 
 //Information for Doorr Job
@@ -119,7 +138,7 @@ export const doorrInfo: IJob = {
   title: "Doorr",
   description: `As a Software Engineer at Doorr, I had the opportunity to work on a serverless Web Application that helps Mortgage Brokers conduct all of their business in a one-stop-shop solution. I worked on several projects, filling multiple different shoes, and performing whatever was needed most. It was a great experience that truly changed my perspective on what I'd like to accomplish with my career. Doorr taught me a lot about how to build proper code that is scalable and allows a full team of developers to work together throughout developing and refining a project.`,
   position: "Software Engineer",
-  dateRange: "May-December 2019",
+  dateRange: "May-December 2019, August 2020-Present",
   logo: doorr,
   website: `https://doorr.com/`,
   link: RoutesEnum.DOORR,
@@ -137,18 +156,18 @@ export const doorrInfo: IJob = {
         "AWS API Gateway",
         "Typescript",
         "REST API",
-        "Postgres",
+        "Postgres"
       ],
       htmlName: "adtal",
       disclaimer:
-        "*All values shown here are false and not based off of any real data*",
+        "*All values shown here are false and not based off of any real data*"
     },
     {
       title: "Filogix Integrations",
       info: `Expanded upon and fixed the 3rd party mortgage application submission tool, one of the essential features our customers use daily. I reduced the number of errors occurring by 60%.`,
       picture: filogix,
       technologies: ["AWS Lambda", "Typescript", "Puppeteer"],
-      htmlName: "snoopy",
+      htmlName: "snoopy"
     },
     {
       title: "Rotting",
@@ -160,18 +179,18 @@ export const doorrInfo: IJob = {
         "Typescript",
         "REST API",
         "Postgres",
-        "Swagger",
+        "Swagger"
       ],
-      htmlName: "new-features",
+      htmlName: "new-features"
     },
     {
       title: "Automated Testing",
       info: `Built out a set of automated tests and tools for the platform, speeding up pre-release testing by 40%. The entire set of tests was built as a serverless function and compiled a list of reports to display in our slack channel.`,
       picture: automatedTesting,
       technologies: ["AWS Lambda", "Typescript", "Jest", "Puppeteer"],
-      htmlName: "automated-testing",
-    },
-  ],
+      htmlName: "automated-testing"
+    }
+  ]
 };
 
 //Information for LCBO job
@@ -198,9 +217,9 @@ export const lcboInfo: IJob = {
         "Typescript",
         "Swagger",
         "Redis",
-        "Elasticsearch",
+        "Elasticsearch"
       ],
-      htmlName: "coldstream",
+      htmlName: "coldstream"
     },
     {
       title: "Challenge & Refusal",
@@ -215,9 +234,9 @@ export const lcboInfo: IJob = {
         "Typescript",
         "Swagger",
         "Auth0",
-        "Postgres",
+        "Postgres"
       ],
-      htmlName: "cr",
+      htmlName: "cr"
     },
     {
       title: "Crown",
@@ -230,9 +249,9 @@ export const lcboInfo: IJob = {
         "SCSS",
         "HTML5",
         "Elasticsearch",
-        "Redis",
+        "Redis"
       ],
-      htmlName: "crown",
+      htmlName: "crown"
     },
     {
       title: "Mixology",
@@ -240,15 +259,15 @@ export const lcboInfo: IJob = {
       so I had the chance to further push Mixology into its piloting phase.`,
       picture: mixology,
       technologies: ["Typescript", "React", "SCSS", "HTML5", "Azure Functions"],
-      htmlName: "mixology",
-    },
-  ],
+      htmlName: "mixology"
+    }
+  ]
 };
 
 //Information for Experience Section
 export const experienceInfo: IExperienceState = {
   title: "My Experience",
-  jobs: [lcboInfo, doorrInfo],
+  jobs: [lcboInfo, doorrInfo]
 };
 
 //Information for Project Section
@@ -260,10 +279,81 @@ export const projectInfo = {
       title: "Nowhere to Go",
       info: "",
       image: "",
-      technologies: [],
-    },
-  ],
+      technologies: []
+    }
+  ]
 };
 
 //Resume id to access online
-export const resumeId: string = "1zLIG6ByMmqk_DagaXowzMIjvcyGL8RZy";
+export const resumeId = "1zLIG6ByMmqk_DagaXowzMIjvcyGL8RZy";
+
+//Information for Technologies Section
+export const technologyInfo: ITechnologyState = {
+  title: "A few of the Technologies I work with",
+  technologies: [
+    {
+      logo: Auth0,
+      title: "Auth0" 
+    },
+    {
+      logo: AWS,
+      title: "AWS" 
+    },
+    {
+      logo: Azure,
+      title: "Azure" 
+    },
+    {
+      logo: CLogo,
+      title: "C" 
+    },
+    {
+      logo: CppLogo,
+      title: "Cpp" 
+    },
+    {
+      logo: Docker,
+      title: "Docker" 
+    },
+    {
+      logo: Elasticsearch,
+      title: "Elasticsearch" 
+    },
+    {
+      logo: Mongo,
+      title: "Mongo" 
+    },
+    {
+      logo: Node,
+      title: "Node" 
+    },
+    {
+      logo: Postgres,
+      title: "Postgres" 
+    },
+    {
+      logo: Python,
+      title: "Python" 
+    },
+    {
+      logo: React,
+      title: "React" 
+    },
+    {
+      logo: Redis,
+      title: "Redis" 
+    },
+    {
+      logo: Typescript,
+      title: "Typescript" 
+    },
+    {
+      logo: Vue,
+      title: "Vue" 
+    },
+    {
+      logo: Yarn,
+      title: "Yarn" 
+    }
+  ]
+};

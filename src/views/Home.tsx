@@ -3,6 +3,7 @@ import Contact from "../containers/Contact";
 import Experience from "../containers/Experience";
 import Interest from "../containers/Interest";
 import Profile from "../containers/Profile";
+import Technologies from "../containers/Technologies";
 // import Project from "../containers/Project";
 import { Carousel } from "react-bootstrap";
 
@@ -17,11 +18,11 @@ class Home extends Component<any, IHomeState> {
     super(props);
 
     this.state = {
-      backgroundImages: [background],
+      backgroundImages: [background]
     };
   }
 
-  public render() {
+  public render(): any {
     return (
       <div className="home-container">
         <div className="app-container">
@@ -34,6 +35,9 @@ class Home extends Component<any, IHomeState> {
           {/* <div className="section-container">
             <Project />
           </div> */}
+          <div className="section-container">
+            <Technologies />
+          </div>
           <div className="section-container">
             <Interest />
           </div>
