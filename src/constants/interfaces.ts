@@ -1,7 +1,8 @@
 export enum RoutesEnum {
   HOME = "/",
   DOORR = "/doorr",
-  LCBONEXT = "/lcbonext"
+  LCBONEXT = "/lcbonext",
+  FINASTRA = "/finastra"
 }
 
 export interface IMedia {

@@ -2,5 +2,7 @@
   "trailingComma": "none",
   "arrowParens": "avoid",
   "semi": true,
-  "endOfLine": "auto"
+  "endOfLine": "auto",
+  "tabWidth": 2,
+  "useTabs": false
 }

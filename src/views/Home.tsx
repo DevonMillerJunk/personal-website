@@ -10,7 +10,7 @@ import { Carousel } from "react-bootstrap";
 import background from "../assets/background.jpg";
 
 interface IHomeState {
-  backgroundImages: any[];
+  backgroundImage: any;
 }
 
 class Home extends Component<any, IHomeState> {
@@ -18,7 +18,7 @@ class Home extends Component<any, IHomeState> {
     super(props);
 
     this.state = {
-      backgroundImages: [background]
+      backgroundImage: background
     };
   }
 
@@ -45,25 +45,12 @@ class Home extends Component<any, IHomeState> {
             <Contact />
           </div>
         </div>
-        <Carousel
-          className="background-image-container"
-          interval={8000}
-          controls={false}
-          fade={true}
-        >
-          {this.state.backgroundImages.map(this.renderBackgroundImage)}
-        </Carousel>
+        <div className="background-image-container">
+          <img className="app-background-image" src={this.state.backgroundImage} />
+        </div>
       </div>
     );
   }
-
-  private renderBackgroundImage = (image: any) => {
-    return (
-      <Carousel.Item>
-        <img className="app-background-image" src={image} alt="First slide" />
-      </Carousel.Item>
-    );
-  };
 }
 
 export default Home;

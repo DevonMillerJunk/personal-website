@@ -30,6 +30,13 @@ import cr from "../assets/LCBO/cr.png";
 import crown from "../assets/LCBO/crown.png";
 import mixology from "../assets/LCBO/mixology.png";
 
+//Finastra/Doorr Job Pictures
+import finastra from "../assets/Finastra/finastra.png";
+import cognito from "../assets/Finastra/cognito.jpg";
+import csvUpload from "../assets/Finastra/csvUpload.png";
+import externalDashboard from "../assets/Finastra/externalDashboard.png";
+import metrics from "../assets/Finastra/metrics.png";
+
 //Technology Pictures
 import Auth0 from "../assets/Technologies/Auth0.jpg";
 import AWS from "../assets/Technologies/AWS.png";
@@ -100,7 +107,7 @@ export const interestInfo: IInterestState = {
   interestInfo: [
     {
       title: "Competitive Swimming",
-      info: `I'm on the Waterloo Varsity Swim Team and have been swimming competitively for over 7 years in both Puerto Rico and Canada. I swim Breastroke and Freestyle, but also enjoy swimming Individual Medley whenever I can. In 2014 I represented Puerto Rico internationally at the ISSF World Cup in Poland.`,
+      info: `I'm on the Waterloo Varsity Swim Team and have been swimming competitively for over 9 years in both Puerto Rico and Canada. I swim Breastroke and Freestyle, but also enjoy swimming Individual Medley whenever I can. In 2014 I represented Puerto Rico internationally at the ISSF World Cup in Poland.`,
       image: swimming
     },
     {
@@ -138,7 +145,7 @@ export const doorrInfo: IJob = {
   title: "Doorr",
   description: `As a Software Engineer at Doorr, I had the opportunity to work on a serverless Web Application that helps Mortgage Brokers conduct all of their business in a one-stop-shop solution. I worked on several projects, filling multiple different shoes, and performing whatever was needed most. It was a great experience that truly changed my perspective on what I'd like to accomplish with my career. Doorr taught me a lot about how to build proper code that is scalable and allows a full team of developers to work together throughout developing and refining a project.`,
   position: "Software Engineer",
-  dateRange: "May-December 2019, August 2020-Present",
+  dateRange: "May-December 2019",
   logo: doorr,
   website: `https://doorr.com/`,
   link: RoutesEnum.DOORR,
@@ -155,6 +162,8 @@ export const doorrInfo: IJob = {
         "AWS Lambda",
         "AWS API Gateway",
         "Typescript",
+        "Vue",
+        "Redux",
         "REST API",
         "Postgres"
       ],
@@ -264,10 +273,72 @@ export const lcboInfo: IJob = {
   ]
 };
 
+//Information for Finastra/Doorr Job
+export const finastraInfo: IJob = {
+  title: "Finastra/Doorr",
+  description: `I began my internship at Doorr, taking a lead role on the Administration Portal Team. I controlled releases, 
+    feature development, roadmapping, and prioritizations-helping Doorr get acquired 2 months into 
+    my term by Finastra, one of the three biggest Fintech companies in the world.`,
+  position: "Software Engineer",
+  dateRange: "August-December 2020",
+  logo: finastra,
+  website: `https://www.finastra.com/news-events/press-releases/filogix-finastra-business-acquires-doorr`,
+  link: RoutesEnum.FINASTRA,
+  htmlName: "finastra",
+  navbarLogo: finastra,
+  projects: [
+    {
+      title: "Account Registration Refactor",
+      info: `Designed new account registration and creation flow with AWS Cognito for the fast 
+        and secure integration of over 17,000 broker accounts to the platform.`,
+      picture: cognito,
+      technologies: [
+        "AWS SES",
+        "AWS Cognito",
+        "AWS Lambda",
+        "Vue",
+        "Typescript"
+      ],
+      htmlName: "auth"
+    },
+    {
+      title: "Metrics Tracking Library",
+      info: `Created a Metrics Tracking Library to monitor the status and uptime of large scale serverless systems.`,
+      picture: metrics,
+      technologies: ["AWS Lambda", "AWS SQS", "Graphana"],
+      htmlName: "metrics"
+    },
+    {
+      title: "External Services Dashboard",
+      info: `Implemented an external service dashbord to easily inform users and limit functionality based on the service status of 3rd party systems.`,
+      picture: externalDashboard,
+      technologies: [
+        "AWS Lambda",
+        "Vue",
+        "Redux",
+        "Postgres"
+      ],
+      htmlName: "external-service"
+    },
+    {
+      title: "CSV Uploader and Processor",
+      info: `Created a CSV upload tool to batch process large requests.`,
+      picture: csvUpload,
+      technologies: [
+        "Vue",
+        "Redux",
+        "Typescript",
+        "Postgres"
+      ],
+      htmlName: "csv-upload"
+    }
+  ]
+};
+
 //Information for Experience Section
 export const experienceInfo: IExperienceState = {
   title: "My Experience",
-  jobs: [lcboInfo, doorrInfo]
+  jobs: [finastraInfo, lcboInfo, doorrInfo]
 };
 
 //Information for Project Section
@@ -279,13 +350,28 @@ export const projectInfo = {
       title: "Nowhere to Go",
       info: "",
       image: "",
-      technologies: []
+      technologies: ["Python"]
+    },
+    {
+      title: "Hearts card game",
+      info: "",
+      image: "",
+      technologies: ["Java", "Object-Oriented Programming"]
+    },
+    {
+      title: "Raspberry Pi Hardware Debugging Tool",
+      info: "",
+      image: "",
+      technologies: ["C++", "C"]
+    },
+    {
+      title: "Event.io",
+      info: "",
+      image: "",
+      technologies: ["Typescript", "React", "Express"]
     }
   ]
 };
-
-//Resume id to access online
-export const resumeId = "1zLIG6ByMmqk_DagaXowzMIjvcyGL8RZy";
 
 //Information for Technologies Section
 export const technologyInfo: ITechnologyState = {

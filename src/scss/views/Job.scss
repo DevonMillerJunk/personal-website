@@ -35,7 +35,7 @@
   }
 
   .job-endnote-container {
-    padding: $spacing-xlg;
+    padding: $spacing-md;
     width: 100%;
     height: $job-endnote-height;
 
@@ -46,13 +46,17 @@
     .job-endnote-text {
       font-weight: bold;
       font-size: $font-size-sm-x;
+      text-align: center;
     }
 
     .job-endnote-image-container {
       cursor: pointer;
+      max-height: 80%;
 
       .job-endnote-image {
-        height: 100%;
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
         width: auto;
       }
     }
