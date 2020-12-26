@@ -19,10 +19,3 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
-
-- task: AzureRmWebAppDeployment@3
-  displayName: 'Azure App Service Deploy: personal website'
-  inputs:
-    azureSubscription: '9b4bbed6-dc71-4598-80f9-bb6f492381c8'
-    WebAppName: 'devonmillerjunk'
-    Package: '$(System.DefaultWorkingDirectory)/build'
