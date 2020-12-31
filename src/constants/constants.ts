@@ -42,7 +42,7 @@ import Auth0 from "../assets/Technologies/Auth0.jpg";
 import AWS from "../assets/Technologies/AWS.png";
 import Azure from "../assets/Technologies/Azure.png";
 import CLogo from "../assets/Technologies/C.png";
-import CppLogo from "../assets/Technologies/C++.png";
+import CppLogo from "../assets/Technologies/Cpp.png";
 import Docker from "../assets/Technologies/Docker.png";
 import Elasticsearch from "../assets/Technologies/Elasticsearch.png";
 import Mongo from "../assets/Technologies/Mongo.png";
