@@ -136,7 +136,7 @@ export const profileInfo: IProfileState = {
   background: devonMillerJunk,
   title: "Hi, I'm Devon",
   subtitle:
-    "Computer Engineer, Competitive Swimmer, and looking to make a difference.",
+    "Computer Engineer, Competitive Swimmer.",
   info: `I'm a young Engineer just starting my career and ready to make a difference. Lately, I've found the ability to do just that through web development, but I've also been honing my skills in low-level programming and hardware while studying Computer Engineering at the University of Waterloo. I'm always interested in working on cool engineering projects and working with talented people to find innovative solutions to challenging problems.`
 };
 
