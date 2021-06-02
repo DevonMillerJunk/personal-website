@@ -1,5 +1,28 @@
 @import "./Home.scss";
-@import "./Doorr.scss";
-@import "./LCBO.scss";
-@import "./Finastra.scss";
-@import "./Job.scss";
+
+
+.app-border-container {
+    position: relative;
+    width: 100%;
+    height: $spacing-app-border;
+    overflow: hidden;
+    background-color: $main-colour;
+    clip-path: ellipse(150% 150% at 0% 0%);
+}
+
+.app-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .app-container-spacer {
+        width: 100%;
+        height: calc(#{$spacing-xlg} + #{$spacing-app-border});
+        overflow: hidden;
+    }
+
+}

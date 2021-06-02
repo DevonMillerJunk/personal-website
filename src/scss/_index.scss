@@ -5,6 +5,8 @@
 @import "./views/all";
 
 html {
+  overflow-y: auto;
+  background-color: transparent;
   height: 100%;
 }
 
@@ -57,4 +59,33 @@ p {
   font-family: "canada-type-gibson", "Rubik", -apple-system, BlinkMacSystemFont,
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.scroll {
+	overflow-y: hidden;
+}
+
+.scrollbar:hover {
+  overflow-y : auto;
+}
+
+.scroll::-webkit-scrollbar-track
+{
+	border-radius: $radius-sm;
+}
+
+.scroll::-webkit-scrollbar
+{
+	width: $spacing-sm;
+}
+
+.scroll::-webkit-scrollbar-thumb
+{
+	border-radius: $radius-sm;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, rgb(122,153,217)),
+									   color-stop(0.72, rgb(73,125,189)),
+									   color-stop(0.86, rgb(28,58,148)));
 }
