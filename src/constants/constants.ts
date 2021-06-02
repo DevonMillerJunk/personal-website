@@ -37,6 +37,9 @@ import csvUpload from "../assets/Finastra/csvUpload.png";
 import externalDashboard from "../assets/Finastra/externalDashboard.png";
 import metrics from "../assets/Finastra/metrics.png";
 
+//Spatial
+import spatial from "../assets/Spatial/logo.png"
+
 //Technology Pictures
 import Auth0 from "../assets/Technologies/Auth0.jpg";
 import AWS from "../assets/Technologies/AWS.png";
@@ -136,8 +139,8 @@ export const profileInfo: IProfileState = {
   background: devonMillerJunk,
   title: "Hi, I'm Devon",
   subtitle:
-    "Computer Engineer, Competitive Swimmer.",
-  info: `I'm a young Engineer just starting my career and ready to make a difference. Lately, I've found the ability to do just that through web development, but I've also been honing my skills in low-level programming and hardware while studying Computer Engineering at the University of Waterloo. I'm always interested in working on cool engineering projects and working with talented people to find innovative solutions to challenging problems.`
+    "Looking to build the next scalable software",
+  info: `Being a co-op student gives you lots of opportunities to learn about different systems architectures. ..........`
 };
 
 //Information for Doorr Job
@@ -147,7 +150,7 @@ export const doorrInfo: IJob = {
   position: "Software Engineer",
   dateRange: "May-December 2019",
   logo: doorr,
-  website: `https://doorr.com/`,
+  website: `https://www.finastra.com/news-events/press-releases/filogix-finastra-business-acquires-doorr`,
   link: RoutesEnum.DOORR,
   htmlName: "doorr",
   navbarLogo: DoorrLogoColour,
@@ -273,16 +276,15 @@ export const lcboInfo: IJob = {
   ]
 };
 
-//Information for Finastra/Doorr Job
+//Information for Finastra Job
 export const finastraInfo: IJob = {
   title: "Finastra/Doorr",
-  description: `I began my internship at Doorr, taking a lead role on the Administration Portal Team. I controlled releases, 
-    feature development, roadmapping, and prioritizations-helping Doorr get acquired 2 months into 
-    my term by Finastra, one of the three biggest Fintech companies in the world.`,
+  description: `During my internship at Finastra, I took a lead role on the Administration Portal Team, controlling releases, 
+    feature development, roadmapping, and prioritizations. The features I added and scalability improvements helped grow the support the new Expert Pro user base.`,
   position: "Software Engineer",
   dateRange: "August-December 2020",
   logo: finastra,
-  website: `https://www.finastra.com/news-events/press-releases/filogix-finastra-business-acquires-doorr`,
+  website: `https://www.finastracanada.com/category/expert-pro/`,
   link: RoutesEnum.FINASTRA,
   htmlName: "finastra",
   navbarLogo: finastra,
@@ -333,6 +335,22 @@ export const finastraInfo: IJob = {
       htmlName: "csv-upload"
     }
   ]
+};
+
+//Information for Spatial Job
+export const spatialInfo: IJob = {
+  title: "Spatial",
+  description: `Working as a full-stack engineer at Spatial gave me the opportunity to design and build 
+  3D interfaces and the backend data pipelines to support them. Creating data pipelines to support a wide 
+  range of platforms (including 3D headsets, mobile, and web) with different specs and processes was really interesting challenge.`,
+  position: "Full-Stack Engineer",
+  dateRange: "April-August 2021",
+  logo: spatial,
+  website: `https://spatial.io/`,
+  link: RoutesEnum.SPATIAL,
+  htmlName: "spatial",
+  navbarLogo: spatial,
+  projects: []
 };
 
 //Information for Experience Section
@@ -443,3 +461,15 @@ export const technologyInfo: ITechnologyState = {
     }
   ]
 };
+
+export const technologiesIUse = {
+  languages: [
+    "Go", "Typescript", "Javascript", "Java", "Python" , "C++", "C", "SQL", "CSS/SASS"
+  ],
+  JSFrameworks: ["React", "React Native", "Vue"],
+  APIs: ["REST", "GraphQL", "SOAP"],
+  Clouds: ["AWS", "Azure", "Heroku"],
+  Scalability: ["Docker", "Terraform", "Kubernetes"],
+  Databases: ["PostgreSQL", "MongoDB", "Elasticsearch", "Redis"],
+  Others: ["Node", "Yarn", "Photon?", "WebGL?", "WebRTC?", "BlockChain?", "Auth0"]
+}
