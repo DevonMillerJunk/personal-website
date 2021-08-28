@@ -42,7 +42,7 @@ import spatial from "../assets/Spatial/logo.png"
 import spatialNavbar from "../assets/Spatial/logo-transparent.png"
 import spatialMux from "../assets/Spatial/mux-video.png"
 import spatialSubscriptions from "../assets/Spatial/oculus-subscriptions.png"
-import spatialThumbnails from "../assets/Spatial/room-thumbnails-2.png"
+import spatialThumbnails from "../assets/Spatial/room-thumbnails.png"
 import spatialMiro from "../assets/Spatial/miro-integration.png"
 
 
