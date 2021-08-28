@@ -39,12 +39,18 @@ import metrics from "../assets/Finastra/metrics.png";
 
 //Spatial
 import spatial from "../assets/Spatial/logo.png"
+import spatialNavbar from "../assets/Spatial/logo-transparent.png"
+import spatialMux from "../assets/Spatial/mux-video.png"
+import spatialSubscriptions from "../assets/Spatial/oculus-subscriptions.png"
+import spatialThumbnails from "../assets/Spatial/room-thumbnails-2.png"
+import spatialMiro from "../assets/Spatial/miro-integration.png"
+
 
 //Technology Pictures
 import Auth0 from "../assets/Technologies/Auth0.jpg";
 import AWS from "../assets/Technologies/AWS.png";
 import Azure from "../assets/Technologies/Azure.png";
-import CLogo from "../assets/Technologies/C.png";
+import GoLogo from "../assets/Technologies/golang.png";
 import CppLogo from "../assets/Technologies/Cpp.png";
 import Docker from "../assets/Technologies/Docker.png";
 import Elasticsearch from "../assets/Technologies/Elasticsearch.png";
@@ -100,7 +106,7 @@ export const contactInfo: IContactState = {
   ],
   title: "Let's Connect!",
   info:
-    "Reach out whenever I'm always open to talk. I'm also in a co-op program and am always looking for cool projects to work on with great people!"
+    "Reach out whenever I'm always open to talk. I'm also in a co-op program and am always looking for cool projects to work on!"
 };
 
 //Information for Interests Section
@@ -139,8 +145,8 @@ export const profileInfo: IProfileState = {
   background: devonMillerJunk,
   title: "Hi, I'm Devon",
   subtitle:
-    "Looking to build the next scalable software",
-  info: `Being a co-op student gives you lots of opportunities to learn about different systems architectures. ..........`
+    "Studying Computer Engeering at UWaterloo. Swimming on the Waterloo Varsity Swim Team.",
+  info: `I’m a big believer in the empowerment of individuals through software. It’s a large part of the reason why I want to become a programmer with the potential to ship code benefitting thousands of people’s lives. Being a co-op student gives has given me lots of opportunities to learn about how different teams can deliver that value to their users!`
 };
 
 //Information for Doorr Job
@@ -340,23 +346,65 @@ export const finastraInfo: IJob = {
 //Information for Spatial Job
 export const spatialInfo: IJob = {
   title: "Spatial",
-  description: `Working as a full-stack engineer at Spatial gave me the opportunity to design and build 
+  description: `Working as a backend engineer at Spatial gave me the opportunity to design and build 
   3D interfaces and the backend data pipelines to support them. Creating data pipelines to support a wide 
-  range of platforms (including 3D headsets, mobile, and web) with different specs and processes was really interesting challenge.`,
-  position: "Full-Stack Engineer",
+  range of platforms (including 3D headsets, mobile, and web) with different specs and processes was really intriguing challenge!`,
+  position: "Backend Engineer",
   dateRange: "April-August 2021",
   logo: spatial,
   website: `https://spatial.io/`,
   link: RoutesEnum.SPATIAL,
   htmlName: "spatial",
-  navbarLogo: spatial,
-  projects: []
+  navbarLogo: spatialNavbar,
+  projects: [
+    {
+      title: "Video Processing System",
+      info: `Designed and implemented video ingestion and processing flow to support modern video codecs and enable bandwidth-adaptive HLS video streaming in Golang for collaborative AR/VR environments`,
+      picture: spatialMux,
+      technologies: [
+        "FFMPEG",
+        "Mux",
+        "MongoDB"
+      ],
+      htmlName: "mux"
+    },
+    {
+      title: "Oculus Subscriptions",
+      info: `Redesigning the subscriptions structure at Spatial was a thrilling challenge that allowed me to find new ways to deliver value to our users. It involved a completely new tier of subscriptions being implemented combined with a new way for users to sign up for our platform!`,
+      picture: spatialSubscriptions,
+      technologies: ["Stripe", "Oculus Subscriptions", "Unity", "C#"],
+      htmlName: "oculus-subscriptions"
+    },
+    {
+      title: "Updated Room Thumbnails",
+      info: `Giving our users a sneak peak into interesting spaces by showing them an up-to-date thumbnail of all the magnificent rooms in the Spatialverse.`,
+      picture: spatialThumbnails,
+      technologies: [
+        "AWS S3",
+        "Golang",
+        "MongoDB"
+      ],
+      htmlName: "room-thumbnails"
+    },
+    {
+      title: "Miro Integrations",
+      info: `Empower our users to move between Miro and Spatial, closing the gap between 2D and 3D spaces by providing tools to bring content from the 3D world into Miro's 2D infinite whiteboard.`,
+      picture: spatialMiro,
+      technologies: [
+        "Miro API",
+        "C#",
+        "Polymer",
+        "React"
+      ],
+      htmlName: "miro-integration"
+    }
+  ]
 };
 
 //Information for Experience Section
 export const experienceInfo: IExperienceState = {
   title: "My Experience",
-  jobs: [finastraInfo, lcboInfo, doorrInfo]
+  jobs: [spatialInfo, finastraInfo, lcboInfo, doorrInfo]
 };
 
 //Information for Project Section
@@ -408,8 +456,8 @@ export const technologyInfo: ITechnologyState = {
       title: "Azure" 
     },
     {
-      logo: CLogo,
-      title: "C" 
+      logo: GoLogo,
+      title: "Golang" 
     },
     {
       logo: CppLogo,
@@ -464,12 +512,12 @@ export const technologyInfo: ITechnologyState = {
 
 export const technologiesIUse = {
   languages: [
-    "Go", "Typescript", "Javascript", "Java", "Python" , "C++", "C", "SQL", "CSS/SASS"
+    "Go", "Typescript", "Javascript", "Java", "Python" , "C++", "C", "SQL", "CSS/SASS", "C#"
   ],
   JSFrameworks: ["React", "React Native", "Vue"],
   APIs: ["REST", "GraphQL", "SOAP"],
   Clouds: ["AWS", "Azure", "Heroku"],
   Scalability: ["Docker", "Terraform", "Kubernetes"],
   Databases: ["PostgreSQL", "MongoDB", "Elasticsearch", "Redis"],
-  Others: ["Node", "Yarn", "Photon?", "WebGL?", "WebRTC?", "BlockChain?", "Auth0"]
+  Others: ["Node", "Yarn", "Photon", "WebGL", "WebRTC", "Auth0", "Unity"]
 }

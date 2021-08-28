@@ -1,0 +1,16 @@
+.spatial-container {
+    .spatial-project-title-container {
+      .spatial-projects-container {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+      }
+    }
+  
+    .spatial-endnote-container {
+      .job-endnote-image-container {
+        margin: $spacing-tiny;
+        height: 100%;
+      }
+    }
+  }
+  

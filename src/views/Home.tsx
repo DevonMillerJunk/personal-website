@@ -5,7 +5,6 @@ import Interest from "../containers/Interest";
 import Profile from "../containers/Profile";
 import Technologies from "../containers/Technologies";
 // import Project from "../containers/Project";
-import { Carousel } from "react-bootstrap";
 
 import background from "../assets/background.jpg";
 
